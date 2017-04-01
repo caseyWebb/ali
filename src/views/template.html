@@ -1,0 +1,41 @@
+<section class="section">
+  <h3 class="title is-2">views</h3>
+  <p>
+    Views are defined in the root of <code>src</code>, with each page having its
+    own directory, and several files such as <code>index.js</code>,
+    <code>template.html</code>, <code>viewModel.js</code>, <code>style.scss</code>,
+    <code>model.js</code>, etc.
+  </p>
+  <p>
+    The contents exported by <code>index.js</code> depends on the plugins you've
+    defined for your app. By default, the following properties are supported...
+
+    <pre><code>
+      // bar is another view declaration like this
+      import bar from './bar'
+
+      export default {
+        title: (ctx) => 'My App',
+        component: () => ({
+          template: import('./template.html'),
+          viewModel: import('./viewModel.js')
+        }),
+        styles: () => [
+          import('./style.scss')
+        ],
+        query: {
+          searchText: '',
+          sort: 'alpha'
+        },
+        data: () => import('./model'),
+        with: {},
+        routes: {
+          '/bar': bar
+        }
+      }
+    </code></pre>
+  </p>
+  <p>
+    Check each plugin's documentation for details.
+  </p>
+</section>

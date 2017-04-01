@@ -3,10 +3,13 @@ const path = require('path')
 const { yellow } = require('chalk')
 const webpack = require('webpack')
 const WebpackDevServer = require('webpack-dev-server')
+const HtmlWebpackPlugin = require('html-webpack-plugin')
 const webpackConfig = require('./webpack.config')
 
 const src = path.resolve(__dirname, '../src')
 const dist = path.resolve(__dirname, '../dist')
+
+const PROD = process.env.NODE_ENV === 'production'
 
 const config = extend({}, webpackConfig, {
   entry: {
@@ -25,13 +28,21 @@ const config = extend({}, webpackConfig, {
   },
 
   plugins: [
-    new webpack.HotModuleReplacementPlugin()
+    ...webpackConfig.plugins,
+    new webpack.HotModuleReplacementPlugin(),
+    new HtmlWebpackPlugin({
+      template: path.resolve(src, 'index.ejs'),
+      vendor: '',
+      shared: ''
+    })
   ]
 })
 
 module.exports = function * (fly) { // eslint-disable-line require-yield
-
   new WebpackDevServer(webpack(config), {
+    compress: PROD,
+    https: PROD,
+
     // use this instead of `noInfo` or `quiet` so rebuilds are logged
     stats: {
       assets: false,
@@ -40,7 +51,6 @@ module.exports = function * (fly) { // eslint-disable-line require-yield
       modules: false,
       version: false
     },
-
     contentBase: dist,
     publicPath: '/',
     inline: true,
@@ -66,7 +76,8 @@ module.exports = function * (fly) { // eslint-disable-line require-yield
       if (err) {
         throw new Error(err)
       }
-      fly.$.log('running on http://0.0.0.0:8080')
+      const protocol = PROD ? 'https' : 'http'
+      fly.$.log(`running on ${protocol}://0.0.0.0:8080`)
       fly.$.log(yellow('NOTE: In order to prevent a redirect to the proxy url you must append the trailing `/`. This is not a bug.'))
     })
 }

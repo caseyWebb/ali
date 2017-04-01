@@ -1,4 +1,4 @@
-import { each, map } from 'lodash'
+import { each, map } from 'lodash-es'
 import ko from 'knockout'
 
 // this regex can not be stored in a variable or webpack will throw:
@@ -9,5 +9,5 @@ const context = require.context('./', true, /\.\/([^\/_]+)\/index\.js$/)
 const components = map(context.keys(), (c) => c.match(/\.\/([^\/_]+)\/index\.js$/)[1])
 
 each(components, (c) => {
-  ko.components.register(c, context(c))
+  ko.components.register(c, context(`./${c}/index.js`))
 })

@@ -23,10 +23,6 @@ const config = extend({}, webpackConfig, {
 
   plugins: [
     ...webpackConfig.plugins,
-    new webpack.DllReferencePlugin({
-      context: path.resolve(__dirname, '../node_modules'),
-      manifest: require(path.resolve(dist, 'vendor.json'))
-    }),
     new webpack.DllPlugin({
       path: path.resolve(dist, 'shared.json'),
       name: 'SHARED',
@@ -36,6 +32,12 @@ const config = extend({}, webpackConfig, {
 })
 
 module.exports = function * () {
+  config.plugins.push(
+    new webpack.DllReferencePlugin({
+      context: path.resolve(__dirname, '../node_modules'),
+      manifest: require(path.resolve(dist, 'vendor.json'))
+    }))
+    
   yield new Promise((resolve, reject) =>
     webpack(config, (err) => err ? reject(err) : resolve()))
 }

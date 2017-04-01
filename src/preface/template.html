@@ -1,0 +1,26 @@
+<section class="section">
+  <h3 class="title is-2">Preface</h3>
+  <p>
+    First things first, I'm going to expect that you're familiar with Knockout. You
+    don't have to be a guru, but this is <strong>not</strong> a tutorial on Knockout.
+  </p>
+  <p>
+    "Ali" is merely a colloquial name for the architecture you see here. It is an
+    opinionated way of building apps with Knockout that has shown to have great success
+    at Profiscience.
+  </p>
+  <p>
+    User experience is of utmost importance, and the backbone of Ali — ko-component-router —
+    was designed around being able to provide a great experience for both the developer
+    and end-user. One example of this is the way that data is loaded in Ali. By virtue of the
+    fact that ko-component-router does intelligent execution of middleware, meaning that it will
+    deeply execute synchronous and asynchronous middleware <em>before</em> performing a
+    navigation, Ali behaves totally synchronously, and completely elimates the need for
+    <code>ready</code> or <code>loading</code> observables and <code>if</code> binds wrapping
+    your entire view. Instead, one loading animation is handled in global middleware, and
+    it is presented until a the page is rendered in one fell swoop when its data is ready.
+  </p>
+  <p>
+    Now, with that out of the way, let's dive into the <a data-bind="path: '/folder-structure'">folder structure</a>...
+  </p>
+</section>

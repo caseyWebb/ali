@@ -1,0 +1,22 @@
+<section class="section">
+  <h3 class="title is-2">Production</h3>
+  <div class="notification is-info">
+    <strong>NOTE</strong> Production builds are turned on by setting <code>NODE_ENV</code>
+    to <code>production</code>. Using the scripts fields in <code>package.json</code> does
+    this automatically.
+  </div>
+  <p>
+    In production, vendor code and shared code in <code>web_modules</code> are built into
+    <code>vendor.[hash].js</code> and <code>shared.[hash].js</code> "DLL"s. These will both
+    be loaded on page load before the app entry. This decreases production build time and
+    enables long term caching. In my experience, this approach is much preferable to
+    using the CommonsChunkPlugin.
+  </p>
+  <p>
+    JavaScripts, HTML, and SCSS will all be minified, and gzipped assets will be produced
+    alongside the regular versions.
+  </p>
+  <p>
+    To build for production, use <code>npm run prod</code> or <code>yarn prod</code>.
+  </p>
+</section>

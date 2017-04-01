@@ -1,4 +1,4 @@
-import { each, map } from 'lodash'
+import { each, map } from 'lodash-es'
 import ko from 'knockout'
 
 // this regex can not be stored in a variable or webpack will throw:
