@@ -4,20 +4,32 @@ import { modelConstructorFactory } from 'utils/model'
 
 const createModelConstructor = memoize(modelConstructorFactory)
 
-export default ({ model: modelConfig }) => {
+export default ({ model: modelConfig, queueModel = true }) => {
   if (modelConfig) {
     return (ctx) => ({
       beforeRender() {
         if (modelConfig.api || modelConfig.createModel || isFunction(modelConfig)) {
-          ctx.queue(getModel(modelConfig, ctx)
+          const p = getModel(modelConfig, ctx)
             .then((m) => (ctx.model = m.default || m))
-            .catch(noop))
+            .catch(noop)
+
+          if (queueModel) {
+            ctx.queue(p)
+          } else {
+            return p
+          }
         } else {
           ctx.model = {}
-          ctx.queue(Promise.all(values(mapValues(modelConfig, (c, n) =>
+          const p = Promise.all(values(mapValues(modelConfig, (c, n) =>
             getModel(c, ctx)
               .then((m) => (ctx.model[n] = m.default || m))
-              .catch(noop)))))
+              .catch(noop))))
+
+          if (queueModel) {
+            ctx.queue(p)
+          } else {
+            return p
+          }
         }
       },
       beforeDispose() {

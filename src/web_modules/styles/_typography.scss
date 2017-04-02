@@ -1,3 +1,13 @@
+@import "~bulma";
+
 p {
   margin-bottom: 1.4rem;
 }
+
+h1, h2, h3, h4, h5, h6 { @extend .title; }
+h1 { @extend .is-1; }
+h2 { @extend .is-2; }
+h3 { @extend .is-3; }
+h4 { @extend .is-4; }
+h5 { @extend .is-5; }
+h6 { @extend .is-6; }

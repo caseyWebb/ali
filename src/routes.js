@@ -5,15 +5,6 @@ import development from './development'
 import production from './production'
 import app from './app/index.js'
 import routes from './routes/index.js'
-import bindings from './bindings'
-import filters from './filters'
-import extenders from './extenders'
-import components from './components'
-import middleware from './middleware'
-import plugins from './plugins'
-import styles from './styles'
-import utils from './utils'
-import views from './views'
 
 export default {
   '/':                  home,
@@ -23,13 +14,29 @@ export default {
   '/production':        production,
   '/app':               app,
   '/routes':            routes,
-  '/bindings':          bindings,
-  '/extenders':         extenders,
-  '/filters':           filters,
-  '/components':        components,
-  '/middleware':        middleware,
-  '/plugins':           plugins,
-  '/styles':            styles,
-  '/utils':             utils,
-  '/views':             views
+  '/web_modules': {
+    routes: {
+      '/bindings':    { title: 'web_modules | bindings', component: () => ({ template: import('bindings/README.md') }) },
+      '/components':  { title: 'web_modules | components', component: () => ({ template: import('components/README.md') }) },
+      '/extenders':   { title: 'web_modules | extenders', component: () => ({ template: import('extenders/README.md') }) },
+      '/filters':     { title: 'web_modules | filters', component: () => ({ template: import('filters/README.md') }) },
+      '/middleware':  { title: 'web_modules | middleware', component: () => ({ template: import('middleware/README.md') }) },
+      '/plugins':     { title: 'web_modules | plugins', component: () => ({ template: import('plugins/README.md') }) },
+      '/styles':      { title: 'web_modules | styles', component: () => ({ template: import('styles/README.md') }) },
+      '/utils':       { title: 'web_modules | utils', component: () => ({ template: import('utils/README.md') }) }
+    }
+  },
+  '/plugins': {
+    routes: {
+      '/component':   { title: 'plugins | component', component: () => ({ template: import('plugins/component/README.md') }) },
+      '/components':  { title: 'plugins | components', component: () => ({ template: import('plugins/components/README.md') }) },
+      '/model':       { title: 'plugins | model', component: () => ({ template: import('plugins/model/README.md') }) },
+      '/prefetch':    { title: 'plugins | prefetch', component: () => ({ template: import('plugins/prefetch/README.md') }) },
+      '/query':       { title: 'plugins | query', component: () => ({ template: import('plugins/query/README.md') }) },
+      '/routes':      { title: 'plugins | routes', component: () => ({ template: import('plugins/routes/README.md') }) },
+      '/styles':      { title: 'plugins | styles', component: () => ({ template: import('plugins/styles/README.md') }) },
+      '/title':       { title: 'plugins | title', component: () => ({ template: import('plugins/title/README.md') }) },
+      '/with':        { title: 'plugins | with', component: () => ({ template: import('plugins/with/README.md') }) }
+    }
+  }
 }

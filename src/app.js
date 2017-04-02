@@ -8,8 +8,23 @@ import 'filters'
 import 'components' // alternatively, import 'components/lazy'
 import 'styles'
 
-import { loading as loadingMiddleware, logging } from 'middleware'
-import { component } from 'plugins'
+import {
+  loading as loadingMiddleware,
+  logging
+} from 'middleware'
+
+import {
+  component as componentPlugin,
+  components as componentsPlugin,
+  model as modelPlugin,
+  prefetch as prefetchPlugin,
+  query as queryPlugin,
+  routes as routesPlugin,
+  styles as stylesPlugin,
+  title as titlePlugin,
+  with as withPlugin
+} from 'plugins'
+
 import routes from './routes'
 
 const showOverlay = ko.observable(true)
@@ -23,7 +38,16 @@ Router.setConfig({
 Router.use(logging)
 Router.use(loadingMiddleware(showOverlay))
 
-Router.usePlugin(component)
+// execution order matters...
+Router.usePlugin(withPlugin)
+Router.usePlugin(queryPlugin)
+Router.usePlugin(modelPlugin)
+Router.usePlugin(titlePlugin)
+Router.usePlugin(componentPlugin)
+Router.usePlugin(componentsPlugin)
+Router.usePlugin(stylesPlugin)
+Router.usePlugin(routesPlugin)
+Router.usePlugin(prefetchPlugin)
 
 Router.useRoutes(routes)
 

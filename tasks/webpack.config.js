@@ -40,7 +40,8 @@ const loaders = {
     options: {
       cache: true
     }
-  }
+  },
+  markdown: 'markdown-loader'
 }
 
 module.exports = {
@@ -68,6 +69,11 @@ module.exports = {
         test: /\.html$/,
         exclude: /node_modules/,
         use: [loaders.html]
+      },
+      {
+        test: /\.md$/,
+        exclude: /node_modules/,
+        use: [loaders.html, loaders.markdown]
       },
       {
         test: /\.(woff|ttf|eot)$/,

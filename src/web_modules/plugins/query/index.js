@@ -1,5 +1,5 @@
 import { isFunction, extend } from 'lodash'
-import Query from 'utils/query'
+import Query from 'ko-querystring'
 
 export default ({ query: queryConfig }) => (ctx) => {
   const group = ctx.canonicalPath
@@ -23,7 +23,7 @@ function getQuery(ctx, group, config) {
 
   if (isFunction(config)) {
     return new Query(config(ctx, raw), group)
-  } else if (config.createQueryFactory) {
+  } else if (config.createQuery) {
     return config.createQuery(ctx, raw, group)
   } else {
     return new Query(config, group)
