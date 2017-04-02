@@ -3,8 +3,6 @@ import preface from './preface'
 import tooling from './tooling'
 import development from './development'
 import production from './production'
-import app from './app/index.js'
-import routes from './routes/index.js'
 
 export default {
   '/':                  home,
@@ -12,8 +10,6 @@ export default {
   '/tooling':           tooling,
   '/development':       development,
   '/production':        production,
-  '/app':               app,
-  '/routes':            routes,
   '/web_modules': {
     routes: {
       '/bindings':    { title: 'web_modules | bindings', component: () => ({ template: import('bindings/README.md') }) },
