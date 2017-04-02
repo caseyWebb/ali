@@ -10,7 +10,7 @@ export default (showOverlay) => function * (ctx) {
 
     // start loading bar
     loadingBar = new ToProgress({
-      color: '#000',
+      color: '#00d1b2',
       duration: 0.2,
       height: '5px'
     })
