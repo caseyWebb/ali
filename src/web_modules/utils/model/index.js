@@ -94,10 +94,10 @@ export function modelConstructorFactory({
 
       return {
         url,
-        get: (a, b) => api.get(...getArgs(a, b)),
-        post: (a, b) => api.post(...getArgs(a, b)),
-        put: (a, b) => api.put(...getArgs(a, b)),
-        _delete: (a, b) => api._delete(...getArgs(a, b))
+        // get: (a, b) => api.get(...getArgs(a, b)),
+        // post: (a, b) => api.post(...getArgs(a, b)),
+        // put: (a, b) => api.put(...getArgs(a, b)),
+        // _delete: (a, b) => api._delete(...getArgs(a, b))
       }
     }
 
@@ -132,5 +132,5 @@ export function modelConstructorFactory({
       cache.clear()
       return Promise.all(map(_models, (m) => reload ? m.reload() : new Promise((r) => r())))
     }
-  }, mixins)
+  }, ...mixins)
 }

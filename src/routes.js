@@ -1,6 +1,11 @@
 export default {
-  '/':                { title: 'Introduction', component: () => ({ template: import('../README.md') }) },
-  '/building':        { title: 'Building', component: () => ({ template: import('../tasks/README.md') }) },
+  '/': {
+    title: 'introduction',
+    routes: {
+      '/':            { title: 'What is Ali?', component: () => ({ template: import('../README.md') }) },
+      '/building':    { title: 'Building', component: () => ({ template: import('../tasks/README.md') }) }
+    }
+  },
 
   '/web_modules': {
     title: 'web_modules',
@@ -10,13 +15,14 @@ export default {
       '/extenders':   { title: 'extenders', component: () => ({ template: import('extenders/README.md') }) },
       '/filters':     { title: 'filters', component: () => ({ template: import('filters/README.md') }) },
       '/middleware':  { title: 'middleware', component: () => ({ template: import('middleware/README.md') }) },
+      '/mixins':      { title: 'mixins', component: () => ({ template: import('mixins/README.md') }) },
       '/plugins':     { title: 'plugins', component: () => ({ template: import('plugins/README.md') }) },
       '/styles':      { title: 'styles', component: () => ({ template: import('styles/README.md') }) },
       '/utils':       { title: 'utils', component: () => ({ template: import('utils/README.md') }) }
     }
   },
   '/plugins': {
-    title: 'plugins',
+    title: 'default plugins',
     routes: {
       '/component':   { title: 'component', component: () => ({ template: import('plugins/component/README.md') }) },
       '/components':  { title: 'components', component: () => ({ template: import('plugins/components/README.md') }) },
@@ -30,6 +36,7 @@ export default {
     }
   },
   '/guides': {
+    title: 'guides',
     routes: {
       '/ajax':            { title: 'Ajax', component: () => ({ template: import('../guides/ajax.md') }) },
       '/creating-a-view': { title: 'Creating a View', component: () => ({ template: import('../guides/creating-a-view.md') }) },
