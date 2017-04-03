@@ -1,7 +1,7 @@
 import { isString, isEmpty, isFunction, map, omitBy, remove } from 'lodash'
 import ko from 'knockout'
 import { fromJS, merge as mergeObs } from 'ko-contrib-utils'
-import * as api from 'utils/api'
+// import * as api from 'utils/api'
 import hash from 'object-hash'
 import mixin from 'utils/mixin'
 
