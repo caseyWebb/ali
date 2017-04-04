@@ -1,5 +1,7 @@
 # Ali
 
+**This is still in active development!** Things aren't quite done, and there are several loose ends. With that being said, you get can probably get the idea by poking around.
+
 An opinionated meta-framework for building model SPAS with [KnockoutJS][knockout]
 
 ## What is it?
