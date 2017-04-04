@@ -8,6 +8,7 @@
     "prod": "NODE_ENV=production fly build",
     "start": "fly serve",
     "test": "jest",
+    "debug": "node --debug-brk ./node_modules/.bin/jest --runInBand",
     "gh-pages": "yarn prod && cp -r dist docs"
   },
   "repository": {

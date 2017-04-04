@@ -5,7 +5,7 @@
   </p>
   <ul class="menu-list">
     {{#foreach routes}}
-      <li><a data-bind="path: path">{{ title }}</a></li>
+      <li><a data-test="{{title}}-link" data-bind="path: path">{{ title }}</a></li>
     {{/foreach}}
   </ul>
   {{/foreach}}
