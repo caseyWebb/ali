@@ -8,5 +8,13 @@
     "transform-object-rest-spread",
     "transform-regenerator",
     "transform-runtime"
-  ]
+  ],
+  "env": {
+    "test": {
+      "plugins": [
+        "transform-es2015-modules-commonjs",
+        "dynamic-import-node"
+      ]
+    }
+  }
 }
