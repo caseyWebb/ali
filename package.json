@@ -7,7 +7,8 @@
     "dev": "NODE_ENV=development fly build",
     "prod": "NODE_ENV=production fly build",
     "start": "fly serve",
-    "test": "jest"
+    "test": "jest",
+    "gh-pages": "yarn prod && cp -r dist docs"
   },
   "repository": {
     "type": "git",

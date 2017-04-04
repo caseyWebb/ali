@@ -1,0 +1,1003 @@
+{
+  "name": "SHARED",
+  "content": {
+    "../../node_modules/lodash/lodash.js": {
+      "id": 0,
+      "meta": {}
+    },
+    "../../node_modules/core-js/library/modules/_core.js": {
+      "id": 1,
+      "meta": {}
+    },
+    "../../node_modules/core-js/library/modules/_global.js": {
+      "id": 2,
+      "meta": {}
+    },
+    "../../node_modules/core-js/library/modules/_wks.js": {
+      "id": 3,
+      "meta": {}
+    },
+    "../../node_modules/core-js/library/modules/_export.js": {
+      "id": 5,
+      "meta": {}
+    },
+    "../../node_modules/core-js/library/modules/_object-dp.js": {
+      "id": 6,
+      "meta": {}
+    },
+    "../../node_modules/core-js/library/modules/_descriptors.js": {
+      "id": 7,
+      "meta": {}
+    },
+    "../../node_modules/core-js/library/modules/_is-object.js": {
+      "id": 8,
+      "meta": {}
+    },
+    "../../node_modules/babel-runtime/regenerator/index.js": {
+      "id": 9,
+      "meta": {}
+    },
+    "../../node_modules/core-js/library/modules/_an-object.js": {
+      "id": 10,
+      "meta": {}
+    },
+    "../../node_modules/core-js/library/modules/_ctx.js": {
+      "id": 11,
+      "meta": {}
+    },
+    "../../node_modules/core-js/library/modules/_hide.js": {
+      "id": 12,
+      "meta": {}
+    },
+    "../../node_modules/core-js/library/modules/_to-iobject.js": {
+      "id": 13,
+      "meta": {}
+    },
+    "../../node_modules/babel-runtime/core-js/promise.js": {
+      "id": 14,
+      "meta": {}
+    },
+    "../../node_modules/babel-runtime/helpers/asyncToGenerator.js": {
+      "id": 15,
+      "meta": {}
+    },
+    "../../node_modules/core-js/library/modules/_fails.js": {
+      "id": 16,
+      "meta": {}
+    },
+    "../../node_modules/core-js/library/modules/_has.js": {
+      "id": 17,
+      "meta": {}
+    },
+    "../../node_modules/babel-runtime/core-js/object/get-prototype-of.js": {
+      "id": 18,
+      "meta": {}
+    },
+    "../../node_modules/babel-runtime/helpers/classCallCheck.js": {
+      "id": 19,
+      "meta": {}
+    },
+    "../../node_modules/babel-runtime/helpers/createClass.js": {
+      "id": 20,
+      "meta": {}
+    },
+    "../../node_modules/babel-runtime/helpers/inherits.js": {
+      "id": 21,
+      "meta": {}
+    },
+    "../../node_modules/babel-runtime/helpers/possibleConstructorReturn.js": {
+      "id": 22,
+      "meta": {}
+    },
+    "../../node_modules/core-js/library/modules/_a-function.js": {
+      "id": 23,
+      "meta": {}
+    },
+    "../../node_modules/core-js/library/modules/_cof.js": {
+      "id": 24,
+      "meta": {}
+    },
+    "../../node_modules/core-js/library/modules/_iterators.js": {
+      "id": 25,
+      "meta": {}
+    },
+    "../../node_modules/core-js/library/modules/_object-create.js": {
+      "id": 26,
+      "meta": {}
+    },
+    "../../node_modules/core-js/library/modules/_property-desc.js": {
+      "id": 27,
+      "meta": {}
+    },
+    "../../node_modules/core-js/library/modules/_set-to-string-tag.js": {
+      "id": 28,
+      "meta": {}
+    },
+    "./components/side-nav/index.js": {
+      "id": 30,
+      "meta": {
+        "harmonyModule": true
+      },
+      "exports": [
+        "template",
+        "viewModel"
+      ]
+    },
+    "./plugins/component/index.js": {
+      "id": 31,
+      "meta": {
+        "harmonyModule": true
+      },
+      "exports": [
+        "default",
+        "fetch"
+      ]
+    },
+    "./utils/cast-thenable/index.js": {
+      "id": 32,
+      "meta": {
+        "harmonyModule": true
+      },
+      "exports": [
+        "default"
+      ]
+    },
+    "../../node_modules/babel-runtime/helpers/get.js": {
+      "id": 33,
+      "meta": {}
+    },
+    "../../node_modules/core-js/library/modules/_defined.js": {
+      "id": 34,
+      "meta": {}
+    },
+    "../../node_modules/core-js/library/modules/_for-of.js": {
+      "id": 35,
+      "meta": {}
+    },
+    "../../node_modules/core-js/library/modules/_library.js": {
+      "id": 36,
+      "meta": {}
+    },
+    "../../node_modules/core-js/library/modules/_object-keys.js": {
+      "id": 37,
+      "meta": {}
+    },
+    "../../node_modules/core-js/library/modules/_to-length.js": {
+      "id": 38,
+      "meta": {}
+    },
+    "../../node_modules/core-js/library/modules/_to-object.js": {
+      "id": 39,
+      "meta": {}
+    },
+    "../../node_modules/core-js/library/modules/_uid.js": {
+      "id": 40,
+      "meta": {}
+    },
+    "../../node_modules/core-js/library/modules/es6.string.iterator.js": {
+      "id": 41,
+      "meta": {}
+    },
+    "./plugins/components/index.js": {
+      "id": 43,
+      "meta": {
+        "harmonyModule": true
+      },
+      "exports": [
+        "default",
+        "fetch"
+      ]
+    },
+    "./plugins/model/index.js": {
+      "id": 44,
+      "meta": {
+        "harmonyModule": true
+      },
+      "exports": [
+        "default",
+        "fetch"
+      ]
+    },
+    "./plugins/styles/index.js": {
+      "id": 45,
+      "meta": {
+        "harmonyModule": true
+      },
+      "exports": [
+        "default",
+        "fetch"
+      ]
+    },
+    "./utils/mixin/index.js": {
+      "id": 46,
+      "meta": {
+        "harmonyModule": true
+      },
+      "exports": [
+        "default"
+      ]
+    },
+    "../../node_modules/core-js/library/modules/_an-instance.js": {
+      "id": 47,
+      "meta": {}
+    },
+    "../../node_modules/core-js/library/modules/_classof.js": {
+      "id": 48,
+      "meta": {}
+    },
+    "../../node_modules/core-js/library/modules/_dom-create.js": {
+      "id": 49,
+      "meta": {}
+    },
+    "../../node_modules/core-js/library/modules/_enum-bug-keys.js": {
+      "id": 50,
+      "meta": {}
+    },
+    "../../node_modules/core-js/library/modules/_iter-define.js": {
+      "id": 51,
+      "meta": {}
+    },
+    "../../node_modules/core-js/library/modules/_meta.js": {
+      "id": 52,
+      "meta": {}
+    },
+    "../../node_modules/core-js/library/modules/_object-gopd.js": {
+      "id": 53,
+      "meta": {}
+    },
+    "../../node_modules/core-js/library/modules/_object-pie.js": {
+      "id": 54,
+      "meta": {}
+    },
+    "../../node_modules/core-js/library/modules/_redefine-all.js": {
+      "id": 55,
+      "meta": {}
+    },
+    "../../node_modules/core-js/library/modules/_shared-key.js": {
+      "id": 56,
+      "meta": {}
+    },
+    "../../node_modules/core-js/library/modules/_shared.js": {
+      "id": 57,
+      "meta": {}
+    },
+    "../../node_modules/core-js/library/modules/_to-integer.js": {
+      "id": 58,
+      "meta": {}
+    },
+    "../../node_modules/core-js/library/modules/_to-primitive.js": {
+      "id": 59,
+      "meta": {}
+    },
+    "../../node_modules/core-js/library/modules/_wks-define.js": {
+      "id": 60,
+      "meta": {}
+    },
+    "../../node_modules/core-js/library/modules/_wks-ext.js": {
+      "id": 61,
+      "meta": {}
+    },
+    "../../node_modules/core-js/library/modules/es6.object.to-string.js": {
+      "id": 62,
+      "meta": {}
+    },
+    "../../node_modules/core-js/library/modules/web.dom.iterable.js": {
+      "id": 63,
+      "meta": {}
+    },
+    "../../node_modules/style-loader/addStyles.js": {
+      "id": 64,
+      "meta": {}
+    },
+    "./components/side-nav/viewModel.js": {
+      "id": 65,
+      "meta": {
+        "harmonyModule": true
+      },
+      "exports": [
+        "default"
+      ]
+    },
+    "./middleware/loading.js": {
+      "id": 66,
+      "meta": {
+        "harmonyModule": true
+      },
+      "exports": [
+        "default"
+      ]
+    },
+    "./middleware/logging.js": {
+      "id": 67,
+      "meta": {
+        "harmonyModule": true
+      },
+      "exports": [
+        "default"
+      ]
+    },
+    "./plugins/prefetch/index.js": {
+      "id": 68,
+      "meta": {
+        "harmonyModule": true
+      },
+      "exports": [
+        "default"
+      ]
+    },
+    "./plugins/query/index.js": {
+      "id": 69,
+      "meta": {
+        "harmonyModule": true
+      },
+      "exports": [
+        "default"
+      ]
+    },
+    "./plugins/routes/index.js": {
+      "id": 70,
+      "meta": {
+        "harmonyModule": true
+      },
+      "exports": [
+        "default"
+      ]
+    },
+    "./plugins/title/index.js": {
+      "id": 71,
+      "meta": {
+        "harmonyModule": true
+      },
+      "exports": [
+        "default"
+      ]
+    },
+    "./plugins/with/index.js": {
+      "id": 72,
+      "meta": {
+        "harmonyModule": true
+      },
+      "exports": [
+        "default"
+      ]
+    },
+    "./utils/model/index.js": {
+      "id": 73,
+      "meta": {
+        "harmonyModule": true
+      },
+      "exports": [
+        "modelConstructorFactory"
+      ]
+    },
+    "./components/side-nav/template.html": {
+      "id": 74,
+      "meta": {}
+    },
+    "./styles/main.scss": {
+      "id": 75,
+      "meta": {}
+    },
+    "../../node_modules/babel-runtime/helpers/toConsumableArray.js": {
+      "id": 76,
+      "meta": {}
+    },
+    "../../node_modules/babel-runtime/helpers/typeof.js": {
+      "id": 77,
+      "meta": {}
+    },
+    "../../node_modules/core-js/library/modules/_html.js": {
+      "id": 78,
+      "meta": {}
+    },
+    "../../node_modules/core-js/library/modules/_ie8-dom-define.js": {
+      "id": 79,
+      "meta": {}
+    },
+    "../../node_modules/core-js/library/modules/_invoke.js": {
+      "id": 80,
+      "meta": {}
+    },
+    "../../node_modules/core-js/library/modules/_iobject.js": {
+      "id": 81,
+      "meta": {}
+    },
+    "../../node_modules/core-js/library/modules/_is-array-iter.js": {
+      "id": 82,
+      "meta": {}
+    },
+    "../../node_modules/core-js/library/modules/_is-array.js": {
+      "id": 83,
+      "meta": {}
+    },
+    "../../node_modules/core-js/library/modules/_iter-call.js": {
+      "id": 84,
+      "meta": {}
+    },
+    "../../node_modules/core-js/library/modules/_iter-detect.js": {
+      "id": 85,
+      "meta": {}
+    },
+    "../../node_modules/core-js/library/modules/_iter-step.js": {
+      "id": 86,
+      "meta": {}
+    },
+    "../../node_modules/core-js/library/modules/_object-gopn.js": {
+      "id": 87,
+      "meta": {}
+    },
+    "../../node_modules/core-js/library/modules/_object-gops.js": {
+      "id": 88,
+      "meta": {}
+    },
+    "../../node_modules/core-js/library/modules/_object-gpo.js": {
+      "id": 89,
+      "meta": {}
+    },
+    "../../node_modules/core-js/library/modules/_object-keys-internal.js": {
+      "id": 90,
+      "meta": {}
+    },
+    "../../node_modules/core-js/library/modules/_object-sap.js": {
+      "id": 91,
+      "meta": {}
+    },
+    "../../node_modules/core-js/library/modules/_redefine.js": {
+      "id": 92,
+      "meta": {}
+    },
+    "../../node_modules/core-js/library/modules/_set-species.js": {
+      "id": 93,
+      "meta": {}
+    },
+    "../../node_modules/core-js/library/modules/_task.js": {
+      "id": 94,
+      "meta": {}
+    },
+    "../../node_modules/core-js/library/modules/core.get-iterator-method.js": {
+      "id": 95,
+      "meta": {}
+    },
+    "../../node_modules/css-loader/lib/css-base.js": {
+      "id": 96,
+      "meta": {}
+    },
+    "./components recursive \\.\\/([^\\/_]+)\\/index\\.js$": {
+      "id": 97,
+      "meta": {}
+    },
+    "./bindings/index.js": {
+      "id": 98,
+      "meta": {
+        "harmonyModule": true
+      }
+    },
+    "./components/index.js": {
+      "id": 99,
+      "meta": {
+        "harmonyModule": true
+      }
+    },
+    "./components/lazy.js": {
+      "id": 100,
+      "meta": {
+        "harmonyModule": true
+      }
+    },
+    "./components/side-nav/test.js": {
+      "id": 101,
+      "meta": {
+        "harmonyModule": true
+      }
+    },
+    "./extenders/index.js": {
+      "id": 102,
+      "meta": {
+        "harmonyModule": true
+      }
+    },
+    "./filters/index.js": {
+      "id": 103,
+      "meta": {
+        "harmonyModule": true
+      }
+    },
+    "./middleware/index.js": {
+      "id": 104,
+      "meta": {
+        "harmonyModule": true
+      },
+      "exports": [
+        "loading",
+        "logging"
+      ]
+    },
+    "./mixins/caching/index.js": {
+      "id": 105,
+      "meta": {
+        "harmonyModule": true
+      },
+      "exports": [
+        "default"
+      ]
+    },
+    "./mixins/tap/index.js": {
+      "id": 106,
+      "meta": {
+        "harmonyModule": true
+      },
+      "exports": [
+        "default"
+      ]
+    },
+    "./mixins/transform/index.js": {
+      "id": 107,
+      "meta": {
+        "harmonyModule": true
+      },
+      "exports": [
+        "default"
+      ]
+    },
+    "./plugins/component/test.js": {
+      "id": 108,
+      "meta": {
+        "harmonyModule": true
+      }
+    },
+    "./plugins/index.js": {
+      "id": 109,
+      "meta": {
+        "harmonyModule": true
+      },
+      "exports": [
+        "component",
+        "components",
+        "model",
+        "prefetch",
+        "query",
+        "routes",
+        "styles",
+        "title",
+        "with"
+      ]
+    },
+    "./styles/index.js": {
+      "id": 110,
+      "meta": {
+        "harmonyModule": true
+      }
+    },
+    "./utils/mixin/test.js": {
+      "id": 111,
+      "meta": {
+        "harmonyModule": true
+      }
+    },
+    "./styles/_layout.scss": {
+      "id": 112,
+      "meta": {}
+    },
+    "./styles/_typography.scss": {
+      "id": 113,
+      "meta": {}
+    },
+    "../routes.js": {
+      "id": 114,
+      "meta": {
+        "harmonyModule": true
+      },
+      "exports": [
+        "default"
+      ]
+    },
+    "../../node_modules/babel-runtime/core-js/array/from.js": {
+      "id": 115,
+      "meta": {}
+    },
+    "../../node_modules/babel-runtime/core-js/map.js": {
+      "id": 116,
+      "meta": {}
+    },
+    "../../node_modules/babel-runtime/core-js/object/create.js": {
+      "id": 117,
+      "meta": {}
+    },
+    "../../node_modules/babel-runtime/core-js/object/define-property.js": {
+      "id": 118,
+      "meta": {}
+    },
+    "../../node_modules/babel-runtime/core-js/object/get-own-property-descriptor.js": {
+      "id": 119,
+      "meta": {}
+    },
+    "../../node_modules/babel-runtime/core-js/object/set-prototype-of.js": {
+      "id": 120,
+      "meta": {}
+    },
+    "../../node_modules/babel-runtime/core-js/reflect/construct.js": {
+      "id": 121,
+      "meta": {}
+    },
+    "../../node_modules/babel-runtime/core-js/symbol.js": {
+      "id": 122,
+      "meta": {}
+    },
+    "../../node_modules/babel-runtime/core-js/symbol/iterator.js": {
+      "id": 123,
+      "meta": {}
+    },
+    "../../node_modules/base64-js/index.js": {
+      "id": 124,
+      "meta": {}
+    },
+    "../../node_modules/buffer/index.js": {
+      "id": 125,
+      "meta": {}
+    },
+    "../../node_modules/core-js/library/fn/array/from.js": {
+      "id": 126,
+      "meta": {}
+    },
+    "../../node_modules/core-js/library/fn/map.js": {
+      "id": 127,
+      "meta": {}
+    },
+    "../../node_modules/core-js/library/fn/object/create.js": {
+      "id": 128,
+      "meta": {}
+    },
+    "../../node_modules/core-js/library/fn/object/define-property.js": {
+      "id": 129,
+      "meta": {}
+    },
+    "../../node_modules/core-js/library/fn/object/get-own-property-descriptor.js": {
+      "id": 130,
+      "meta": {}
+    },
+    "../../node_modules/core-js/library/fn/object/get-prototype-of.js": {
+      "id": 131,
+      "meta": {}
+    },
+    "../../node_modules/core-js/library/fn/object/set-prototype-of.js": {
+      "id": 132,
+      "meta": {}
+    },
+    "../../node_modules/core-js/library/fn/promise.js": {
+      "id": 133,
+      "meta": {}
+    },
+    "../../node_modules/core-js/library/fn/reflect/construct.js": {
+      "id": 134,
+      "meta": {}
+    },
+    "../../node_modules/core-js/library/fn/symbol/index.js": {
+      "id": 135,
+      "meta": {}
+    },
+    "../../node_modules/core-js/library/fn/symbol/iterator.js": {
+      "id": 136,
+      "meta": {}
+    },
+    "../../node_modules/core-js/library/modules/_add-to-unscopables.js": {
+      "id": 137,
+      "meta": {}
+    },
+    "../../node_modules/core-js/library/modules/_array-from-iterable.js": {
+      "id": 138,
+      "meta": {}
+    },
+    "../../node_modules/core-js/library/modules/_array-includes.js": {
+      "id": 139,
+      "meta": {}
+    },
+    "../../node_modules/core-js/library/modules/_array-methods.js": {
+      "id": 140,
+      "meta": {}
+    },
+    "../../node_modules/core-js/library/modules/_array-species-constructor.js": {
+      "id": 141,
+      "meta": {}
+    },
+    "../../node_modules/core-js/library/modules/_array-species-create.js": {
+      "id": 142,
+      "meta": {}
+    },
+    "../../node_modules/core-js/library/modules/_bind.js": {
+      "id": 143,
+      "meta": {}
+    },
+    "../../node_modules/core-js/library/modules/_collection-strong.js": {
+      "id": 144,
+      "meta": {}
+    },
+    "../../node_modules/core-js/library/modules/_collection-to-json.js": {
+      "id": 145,
+      "meta": {}
+    },
+    "../../node_modules/core-js/library/modules/_collection.js": {
+      "id": 146,
+      "meta": {}
+    },
+    "../../node_modules/core-js/library/modules/_create-property.js": {
+      "id": 147,
+      "meta": {}
+    },
+    "../../node_modules/core-js/library/modules/_enum-keys.js": {
+      "id": 148,
+      "meta": {}
+    },
+    "../../node_modules/core-js/library/modules/_iter-create.js": {
+      "id": 149,
+      "meta": {}
+    },
+    "../../node_modules/core-js/library/modules/_keyof.js": {
+      "id": 150,
+      "meta": {}
+    },
+    "../../node_modules/core-js/library/modules/_microtask.js": {
+      "id": 151,
+      "meta": {}
+    },
+    "../../node_modules/core-js/library/modules/_object-dps.js": {
+      "id": 152,
+      "meta": {}
+    },
+    "../../node_modules/core-js/library/modules/_object-gopn-ext.js": {
+      "id": 153,
+      "meta": {}
+    },
+    "../../node_modules/core-js/library/modules/_set-proto.js": {
+      "id": 154,
+      "meta": {}
+    },
+    "../../node_modules/core-js/library/modules/_species-constructor.js": {
+      "id": 155,
+      "meta": {}
+    },
+    "../../node_modules/core-js/library/modules/_string-at.js": {
+      "id": 156,
+      "meta": {}
+    },
+    "../../node_modules/core-js/library/modules/_to-index.js": {
+      "id": 157,
+      "meta": {}
+    },
+    "../../node_modules/core-js/library/modules/es6.array.from.js": {
+      "id": 158,
+      "meta": {}
+    },
+    "../../node_modules/core-js/library/modules/es6.array.iterator.js": {
+      "id": 159,
+      "meta": {}
+    },
+    "../../node_modules/core-js/library/modules/es6.map.js": {
+      "id": 160,
+      "meta": {}
+    },
+    "../../node_modules/core-js/library/modules/es6.object.create.js": {
+      "id": 161,
+      "meta": {}
+    },
+    "../../node_modules/core-js/library/modules/es6.object.define-property.js": {
+      "id": 162,
+      "meta": {}
+    },
+    "../../node_modules/core-js/library/modules/es6.object.get-own-property-descriptor.js": {
+      "id": 163,
+      "meta": {}
+    },
+    "../../node_modules/core-js/library/modules/es6.object.get-prototype-of.js": {
+      "id": 164,
+      "meta": {}
+    },
+    "../../node_modules/core-js/library/modules/es6.object.set-prototype-of.js": {
+      "id": 165,
+      "meta": {}
+    },
+    "../../node_modules/core-js/library/modules/es6.promise.js": {
+      "id": 166,
+      "meta": {}
+    },
+    "../../node_modules/core-js/library/modules/es6.reflect.construct.js": {
+      "id": 167,
+      "meta": {}
+    },
+    "../../node_modules/core-js/library/modules/es6.symbol.js": {
+      "id": 168,
+      "meta": {}
+    },
+    "../../node_modules/core-js/library/modules/es7.map.to-json.js": {
+      "id": 169,
+      "meta": {}
+    },
+    "../../node_modules/core-js/library/modules/es7.symbol.async-iterator.js": {
+      "id": 170,
+      "meta": {}
+    },
+    "../../node_modules/core-js/library/modules/es7.symbol.observable.js": {
+      "id": 171,
+      "meta": {}
+    },
+    "../../node_modules/css-loader/index.js!../../node_modules/sass-loader/lib/loader.js!./styles/_layout.scss": {
+      "id": 172,
+      "meta": {}
+    },
+    "../../node_modules/css-loader/index.js!../../node_modules/sass-loader/lib/loader.js!./styles/_typography.scss": {
+      "id": 173,
+      "meta": null
+    },
+    "../../node_modules/css-loader/index.js!../../node_modules/sass-loader/lib/loader.js!./styles/main.scss": {
+      "id": 174,
+      "meta": {}
+    },
+    "../../README.md": {
+      "id": 175,
+      "meta": {}
+    },
+    "../../guides/creating-a-view.md": {
+      "id": 176,
+      "meta": {}
+    },
+    "../../guides/nested-routing.md": {
+      "id": 177,
+      "meta": {}
+    },
+    "../../guides/working-with-data.md": {
+      "id": 178,
+      "meta": {}
+    },
+    "./bindings/README.md": {
+      "id": 179,
+      "meta": {}
+    },
+    "./components/README.md": {
+      "id": 180,
+      "meta": {}
+    },
+    "./extenders/README.md": {
+      "id": 181,
+      "meta": {}
+    },
+    "./filters/README.md": {
+      "id": 182,
+      "meta": {}
+    },
+    "./middleware/README.md": {
+      "id": 183,
+      "meta": {}
+    },
+    "./mixins/README.md": {
+      "id": 184,
+      "meta": {}
+    },
+    "./mixins/caching/README.md": {
+      "id": 185,
+      "meta": {}
+    },
+    "./mixins/tap/README.md": {
+      "id": 186,
+      "meta": {}
+    },
+    "./mixins/transform/README.md": {
+      "id": 187,
+      "meta": {}
+    },
+    "./plugins/README.md": {
+      "id": 188,
+      "meta": {}
+    },
+    "./plugins/component/README.md": {
+      "id": 189,
+      "meta": {}
+    },
+    "./plugins/components/README.md": {
+      "id": 190,
+      "meta": {}
+    },
+    "./plugins/model/README.md": {
+      "id": 191,
+      "meta": {}
+    },
+    "./plugins/prefetch/README.md": {
+      "id": 192,
+      "meta": {}
+    },
+    "./plugins/query/README.md": {
+      "id": 193,
+      "meta": {}
+    },
+    "./plugins/routes/README.md": {
+      "id": 194,
+      "meta": {}
+    },
+    "./plugins/styles/README.md": {
+      "id": 195,
+      "meta": {}
+    },
+    "./plugins/title/README.md": {
+      "id": 196,
+      "meta": {}
+    },
+    "./plugins/with/README.md": {
+      "id": 197,
+      "meta": {}
+    },
+    "./styles/README.md": {
+      "id": 198,
+      "meta": {}
+    },
+    "./utils/README.md": {
+      "id": 199,
+      "meta": {}
+    },
+    "./utils/model/README.md": {
+      "id": 200,
+      "meta": {}
+    },
+    "../../tasks/README.md": {
+      "id": 201,
+      "meta": {}
+    },
+    "../../test/README.md": {
+      "id": 202,
+      "meta": {}
+    },
+    "../../node_modules/ieee754/index.js": {
+      "id": 203,
+      "meta": {}
+    },
+    "../../node_modules/isarray/index.js": {
+      "id": 204,
+      "meta": {}
+    },
+    "../../node_modules/ko-component-tester/dist/ko-component-tester.js": {
+      "id": 205,
+      "meta": {}
+    },
+    "../../node_modules/object-hash/dist/object_hash.js": {
+      "id": 206,
+      "meta": {}
+    },
+    "../../node_modules/process/browser.js": {
+      "id": 207,
+      "meta": {}
+    },
+    "../../node_modules/regenerator-runtime/runtime-module.js": {
+      "id": 208,
+      "meta": {}
+    },
+    "../../node_modules/regenerator-runtime/runtime.js": {
+      "id": 209,
+      "meta": {}
+    },
+    "../../node_modules/style-loader/fixUrls.js": {
+      "id": 210,
+      "meta": {}
+    },
+    "../../node_modules/toprogress/lib/toprogress.js": {
+      "id": 211,
+      "meta": {}
+    },
+    "../../node_modules/webpack/buildin/module.js": {
+      "id": 212,
+      "meta": {}
+    },
+    "./bindings recursive \\.\\/([^\\/_]+)\\/index\\.js$": {
+      "id": 213,
+      "meta": {}
+    },
+    "./components async recursive ^\\.\\/.*\\/index\\.js$": {
+      "id": 214,
+      "meta": {}
+    },
+    "./extenders recursive \\.\\/([^\\/_]+)\\/index\\.js$": {
+      "id": 215,
+      "meta": {}
+    },
+    "./filters recursive \\.\\/([^\\/_]+)\\/index\\.js$": {
+      "id": 216,
+      "meta": {}
+    }
+  }
+}
