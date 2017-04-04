@@ -1,42 +1,45 @@
-[Home](../../../) / Utils / model
+# model util
 
-# utils/model
+Provides a factory for creating easily composable/extensible model classes
 
-This file serves as the counterpart to utils/collection, and is intended to be
-used for API endpoints that return a single model instance (rather than, well, a collection).
+Exports `{ modelConstructorFactory }`
 
-It provides defaults that work OOTB in many cases, but allows for easy overwriting
-via inheritance and composition.
+## modelConstructorFactory(config) => class Model
 
-This file contains one export: a factory function that returns a new `Model` class
-that may then be instantiated.
-
-
-## exports.modelConstructorFactory(modelConfig) => class Model
-
-Creates a new model class based on `modelConfig`.
+Creates a new model class based on `config`
 
 ### Configuration
 
-| Option            | Description                                                                         |
-| ----------------- | ----------------------------------------------------------------------------------- |
-| api               | controller name that model should use                                               |
-| extend (optional) | class that the new model constructor should extend, used to supply custom functions |
+| Option            | Description                                                                           |
+| ----------------- | ------------------------------------------------------------------------------------- |
+| mixins (optional) | array of mixins to include (used to include common functionality)                     |
+| extend (optional) | class that the new model constructor should extend (used to supply custom functions)  |
 
 ### Usage
 
 ```javascript
-// import model class factory
+import ajax from 'axios'
 import { modelConstructorFactory } from 'utils/model'
+import ajaxMixin from 'mixins/ajax'
+import cachingMixin from 'mixins/caching'
 
-// create new model class
-const Course = modelConstructorFactory({ api: 'InstructorCourse' })
+const User = modelConstructorFactory({
+  mixins: [
+    ajaxMixin({ url: '/api/user' }),
+    cachingMixin()
+  ],
+  extend: class {
+    async save() {
+      ajax.post(`/api/user/${this.data.id()}`, this.data)
+    }
+  }
+})
 ```
 
 
-## Model class
+## Model Class
 
-**NOTE:** This is the new class returned by `modelConstructorFactory`.
+**NOTE:** This is the new class returned by `modelConstructorFactory`
 
 ### API
 
@@ -51,111 +54,48 @@ Instantiates a new `Model` instance
 
 ---
 
-#### Static Members
-
-##### Model.api[method]\([endpoint = '', params = {}])
-
-Convenience accessor for ajax calls to this model's controller.
-Equivalent to `import 'utils/api'[method](modelConfig.api + endpoint, params)`.
-
-##### Model.factory([params]) => Promise.resolve(model)
-
-Instantiates new instance. Params may be plain js or observable. Used instead of
-constructor so that it may be promised, as well as to enable caching.
-
-##### Model.fetch([params]) => Promise.resolve(m)
-
-Function that returns model data. By default, `Model.api.get(params)`.
-
-##### Model.invalidate()
-
-Clears any cached values for the Model class
-
-##### Model.retrieve(params) => Promise.resolve(m)
-
-Attempts to get model data from cache, else calls `Model.fetch(params)` (whose response is then cached)
-
----
-
 #### Instance Members
 
 ##### model.data
-
 Model data (usually api response)
 
 ##### model.params
-
 `params` that were passed into the constructor/factory
 
-##### model.api[method]\([endpoint = '', params = {}])
-
-Accessor for `Model.api`
-
-##### model.asObservable() => model
-
-Creates a clone of the current model with `model.data` cast to observables, and
-wires up subscription to react to upstream changes to the `params` used to construct
-the model.
-
-##### model.save() => Promise.resolve()
-
-Saves the model instance. By default, posts the model to a `save` endpoint on the
-model's controller.
+##### model.reload() => Promise
+Reloads a model — calls fetch and merges new data onto `this.data`
 
 ##### model.dispose()
+Disposes a model
 
-Disposes a model instance
+#### Static Members
+
+##### Model.factory([params]) => Promise<model>
+Instantiates new model. Params may be plain js or observable. Used instead of
+constructor so async isn't harder than it has to be.
+
+##### Model.fetch([params]) => Promise<data>
+Return JS data for model
+
+**STUB:** This function is an interface so-to-speak and must be implemented. The
+easiest way to do this for most models is via the [ajax mixin](../../mixins/ajax).
+Otherwise, a static async fetch function must be defined on the class passed to `extend`.
 
 ---
-
-#### Extendable Members
-
-While technically you may overwrite any function, `fetch`, `save`, and `invalidate`
-should be the only ones you ever need to, if any.
-
-For example, suppose the api to save the model doesn't simply expect the model to be
-posted back to a `Save` endpoint, but rather wants some deltas on an `Update` endpoint.
-
-You could do this with...
-
-```javascript
-import { modelConstructorFactory } from 'utils/model'
-const Something = modelConstructorFactory({
-  api: 'InstructorSomething',
-  extend: class {
-    static calculateDeltas(data) {
-      return // do some calculations...
-    },
-    save() {
-      const deltas = Something.calculateDeltas(this.data)
-
-      // NOTE: we are returning a promise. This is important.
-      return this.api.post('Update', deltas)
-    }
-  }
-})
-```
-
-Because the class we pass to `extend` is actually used as the base class, there
-is no need to worry about using `super` to ensure everything plays nicely. `fetch`
-and `save` will automatically work with caching.
-
-
-## Best Practices
-
-- Always use `Model.factory` to instantiate new instances
-- Use `Model.retrieve` rather than `Model.fetch` to utilize caching
 
 ## Kitchen-Sink Example
 
 ```javascript
 import ko from 'knockout'
 import { modelConstructorFactory } from 'utils/model'
+import ajaxMixin from 'mixins/ajax'
 
 const foos = ['foo', 'bar', 'baz', 'qux']
 
 const Foo = modelConstructorFactory({
-  api: 'InstructorFoos',
+  mixins: [
+    ajaxMixin({ url: '/api/foos' })
+  ],
   extend: class {
     static getFoo(i) {
       return foos[i]

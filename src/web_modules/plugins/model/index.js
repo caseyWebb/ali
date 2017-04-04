@@ -43,6 +43,12 @@ export default ({ model: modelConfig, queueModel = true }) => {
   }
 }
 
+export function fetch(model) {
+  return isFunction(model)
+    ? model().then(({ default: _default }) => _default)
+    : model
+}
+
 function getParams(ctx) {
   const query = isUndefined(ctx.query) ? {} : ctx.query.asObservable()
 
@@ -61,7 +67,7 @@ function getModel(modelConfig, ctx) {
   if (modelConfig.createModel) {
     return modelConfig.createModel(ctx)
   } else if (isFunction(modelConfig)) {
-    return modelConfig().then(({ default: model }) => model.factory(params))
+    return fetch(modelConfig).then((model) => model.factory(params))
   } else {
     const Model = createModelConstructor(modelConfig)
     return Model.factory(params)

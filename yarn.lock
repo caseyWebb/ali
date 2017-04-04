@@ -1940,7 +1940,7 @@ es6-weak-map@^2.0.1:
     es6-iterator "^2.0.1"
     es6-symbol "^3.1.1"
 
-escape-html@~1.0.3:
+escape-html@^1.0.3, escape-html@~1.0.3:
   version "1.0.3"
   resolved "https://registry.yarnpkg.com/escape-html/-/escape-html-1.0.3.tgz#0258eae4d3d0c0974de1c169188ef0051d1d1988"
 
@@ -3703,9 +3703,13 @@ ko-component-router@next:
   version "5.0.0-rc.5"
   resolved "https://registry.yarnpkg.com/ko-component-router/-/ko-component-router-5.0.0-rc.5.tgz#15a148cbe0f9008f789f6ac1b13c84f7d5bbb024"
   dependencies:
-    lodash-es "^4.17.4"
+    lodash "^4.17.4"
     path-to-regexp "^1.2.1"
     tslib "^1.6.0"
+
+ko-component-tester@^3.2.1:
+  version "3.2.1"
+  resolved "https://registry.yarnpkg.com/ko-component-tester/-/ko-component-tester-3.2.1.tgz#c2f6a78f4102807f155a1379a44e9d08284c7cc1"
 
 ko-contrib-fns@^0.0.5:
   version "0.0.5"
@@ -3799,9 +3803,9 @@ locate-path@^2.0.0:
     p-locate "^2.0.0"
     path-exists "^3.0.0"
 
-lodash-es@^4.17.4:
+lodash@^4.17.4:
   version "4.17.4"
-  resolved "https://registry.yarnpkg.com/lodash-es/-/lodash-es-4.17.4.tgz#dcc1d7552e150a0640073ba9cb31d70f032950e7"
+  resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.4.tgz#dcc1d7552e150a0640073ba9cb31d70f032950e7"
 
 lodash._basecopy@^3.0.0:
   version "3.0.1"

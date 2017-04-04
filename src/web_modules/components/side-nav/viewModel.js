@@ -1,4 +1,4 @@
-import { map } from 'lodash-es'
+import { map } from 'lodash'
 import routes from '../../../routes'
 
 export default class SideNavViewModel {

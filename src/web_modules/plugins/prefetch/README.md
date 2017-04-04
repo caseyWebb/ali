@@ -1,6 +1,6 @@
 # prefetch plugin
 
 Attempts to prefetch the assets necessary for the next logical page(s). Loads
-components and styles for any adjacent routes to the current by default.
+components and styles for any routes adjacent to the current.
 
-"Silent" plugin. Does not accept any options.
+Does not accept any options (no `prefetch` property on view declarations)

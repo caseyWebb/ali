@@ -10,7 +10,7 @@ import 'styles'
 
 import {
   loading as loadingMiddleware,
-  logging
+  logging as loggingMiddleware
 } from 'middleware'
 
 import {
@@ -35,7 +35,7 @@ Router.setConfig({
   activePathCSSClass: 'is-active'
 })
 
-Router.use(logging)
+Router.use(loggingMiddleware)
 Router.use(loadingMiddleware(showOverlay))
 
 // execution order matters...

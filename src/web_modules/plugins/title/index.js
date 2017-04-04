@@ -1,4 +1,4 @@
-import { isFunction } from 'lodash-es'
+import { isFunction } from 'lodash'
 
 export default ({ title: _title }) => {
   if (_title) {

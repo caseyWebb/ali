@@ -3,7 +3,8 @@ export default {
     title: 'introduction',
     routes: {
       '/':            { title: 'What is Ali?', component: () => ({ template: import('../README.md') }) },
-      '/building':    { title: 'Building', component: () => ({ template: import('../tasks/README.md') }) }
+      '/building':    { title: 'Building', component: () => ({ template: import('../tasks/README.md') }) },
+      '/testing':     { title: 'Testing', component: () => ({ template: import('../test/README.md') }) }
     }
   },
 
@@ -35,12 +36,26 @@ export default {
       '/with':        { title: 'with', component: () => ({ template: import('plugins/with/README.md') }) }
     }
   },
+  '/utils': {
+    title: 'utils',
+    routes: {
+      '/model':       { title: 'model', component: () => ({ template: import('utils/model/README.md') }) }
+    }
+  },
+  '/mixins': {
+    title: 'mixins',
+    routes: {
+      '/caching':     { title: 'caching', component: () => ({ template: import('mixins/caching/README.md') }) },
+      '/tap':         { title: 'tap', component: () => ({ template: import('mixins/tap/README.md') }) },
+      '/transform':   { title: 'transform', component: () => ({ template: import('mixins/transform/README.md') }) }
+    }
+  },
   '/guides': {
     title: 'guides',
     routes: {
-      '/ajax':            { title: 'Ajax', component: () => ({ template: import('../guides/ajax.md') }) },
-      '/creating-a-view': { title: 'Creating a View', component: () => ({ template: import('../guides/creating-a-view.md') }) },
-      '/nested-routing':  { title: 'Nested Routing', component: () => ({ template: import('../guides/nested-routing.md') }) }
+      '/working-with-data': { title: 'Working with Data', component: () => ({ template: import('../guides/working-with-data.md') }) },
+      '/creating-a-view':   { title: 'Creating a View', component: () => ({ template: import('../guides/creating-a-view.md') }) },
+      '/nested-routing':    { title: 'Nested Routing', component: () => ({ template: import('../guides/nested-routing.md') }) }
     }
   }
 }

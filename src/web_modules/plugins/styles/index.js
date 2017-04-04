@@ -6,7 +6,7 @@ export default function plugin({ styles: _styles }) {
     let styles
     return (ctx) => ({
       beforeRender() {
-        ctx.queue(fetch(isFunction(_styles) ? _styles() : _styles).then((s) => {
+        ctx.queue(fetch(_styles).then((s) => {
           styles = s
           invokeMap(styles, 'use')
         }))
@@ -19,5 +19,5 @@ export default function plugin({ styles: _styles }) {
 }
 
 export function fetch(styles) {
-  return Promise.all(map(styles, castThenable))
+  return Promise.all(map(isFunction(styles) ? styles() : styles, castThenable))
 }

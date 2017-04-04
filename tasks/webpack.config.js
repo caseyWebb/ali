@@ -54,7 +54,7 @@ module.exports = {
       {
         test: /\.js$/,
         exclude: /node_modules/,
-        use: [loaders.babel, loaders.eslint]
+        use: [loaders.babel/*, loaders.eslint*/]
       },
       {
         test: /\.css$/,
