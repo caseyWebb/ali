@@ -3,11 +3,10 @@
 Creates and loads a [model](../../utils/model/) and attaches it to `ctx.model`.
 
 Accepts:
-  - a model config object
   - a model class
   - a createModel factory that receives `ctx` as its first argument and returns a model instance
 
-If using a config object or class, the constructor will be passed `ko.pureComputed(() => extend({}, params, ko.toJS(ctx.query)))`,
+If using a class, the constructor will be passed `ko.pureComputed(() => extend({}, params, ko.toJS(ctx.query)))`,
 where `params` are the accumulated `ctx.params` for this as well as any parent routers
 (`extend({}, ..., ctx.$parents[2].params, ctx.$parents[1].params, ctx.$parents[0].params, ctx.params)`).
 
@@ -26,16 +25,14 @@ is always available, whereas you'd have to disable queueing to get `ctx.$parent.
 e.x.
 ```javascript
 export default {
-  // config object, this will be passed to `createModelConstructor`
-  model: { api: 'InstructorSomething' },
-
   // model class, async w/ code splitting RECOMMENDED
   model: () => import('./model')
   // model.js
   // import { createModelConstructor } from 'utils/model'
   // export default createModelConstructor({ api: 'InstructorSomething' })o
 
-  // factory function, used in special cases. Should return model instance.
+  // factory function, used in special cases. Should return model instance. Can
+  // be promised
   model: {
     createModel: (ctx) => new Model(ctx)
   }

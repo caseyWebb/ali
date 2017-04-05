@@ -1,35 +1,25 @@
-import { isFunction, defaults, map } from 'lodash'
+import { isFunction, defaults } from 'lodash'
 import ko from 'knockout'
-import castThenable from 'utils/cast-thenable'
+import resolveAny from 'utils/resolve-any'
 
 export default function plugin({ component }) {
   if (component) {
     return function * (ctx) {
-      const componentName = ctx.canonicalPath
-      ctx.route.component = componentName
+      ctx.route.component = ctx.canonicalPath
 
       ctx.queue(fetch(component)
         .then((componentConfig) => {
           defaults(componentConfig, { synchronous: true })
-          ko.components.register(componentName, componentConfig)
+          ko.components.register(ctx.route.component, componentConfig)
         }))
 
       yield
 
-      ko.components.unregister(componentName)
+      ko.components.unregister(ctx.route.component)
     }
   }
 }
 
 export async function fetch(component) {
-  const componentConfig = {}
-  const promises = map(
-      isFunction(component)
-      ? component()
-      : component,
-    (_v, k) => castThenable(_v).then((v) => (componentConfig[k] = v.default || v)))
-
-  await Promise.all(promises)
-
-  return componentConfig
+  return await resolveAny(isFunction(component) ? component() : component)
 }

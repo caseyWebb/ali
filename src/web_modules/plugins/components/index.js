@@ -1,43 +1,36 @@
 import ko from 'knockout'
-import { clone, isFunction, each, map } from 'lodash'
-import castThenable from 'utils/cast-thenable'
+import { isFunction, clone, each } from 'lodash'
+import resolveAny from 'utils/resolve-any'
 
 export default function plugin({ components: getComponents }) {
   if (getComponents) {
-    return (ctx) => {
+    return function * (ctx) {
       let _components
-      return {
-        beforeRender() {
-          ctx.queue(fetch(getComponents).then((components) => {
-            _components = components
-            return each(components, (c, n) => {
-              if (!ko.components.isRegistered(n)) {
-                ko.components.register(n, clone(c))
-              }
-            })
-          }))
-        },
-        beforeDispose() {
-          each(_components, (v, k) => {
-            ko.components.unregister(k)
-          })
-        }
-      }
+
+      ctx.queue(fetch(getComponents).then((components) => {
+        _components = components
+        return each(components, (c, n) => {
+          if (!ko.components.isRegistered(n)) {
+            ko.components.register(n, clone(c))
+          }
+        })
+      }))
+
+      yield
+
+      // afterRender
+
+      yield
+
+      each(_components, (v, k) => {
+        ko.components.unregister(k)
+      })
     }
   }
 }
 
 export async function fetch(components) {
-  const config = {}
-  const promises = map(
-      isFunction(components)
-      ? components()
-      : components,
-    (_v, k) => castThenable(_v).then((v) => (config[k] = v.default || v)))
-
-  await Promise.all(promises)
-
-  return config
+  return await resolveAny(isFunction(components) ? components() : components)
 }
 
 // export async function fetch(components = {}) {

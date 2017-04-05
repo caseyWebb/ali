@@ -1,52 +1,82 @@
-import { each, extend, defaults, mapValues, isFunction, isUndefined, values, memoize, noop } from 'lodash'
+import { isFunction, isPlainObject, isUndefined, each, extend, defaults, map, mapValues } from 'lodash'
 import ko from 'knockout'
-import { modelConstructorFactory } from 'utils/model'
+import resolveAny from 'utils/resolve-any'
 
-const createModelConstructor = memoize(modelConstructorFactory)
+export default ({
+  model: _models,
+  queueModel = true
+}) => {
+  if (_models) {
+    return function * (ctx) {
+      const p = fetch(_models)
+        .then((models) => normalizeConfig(models))
+        .then((models) => createModels(models, ctx))
+        .then((models) => attachToCtx(models, ctx))
 
-export default ({ model: modelConfig, queueModel = true }) => {
-  if (modelConfig) {
-    return (ctx) => ({
-      beforeRender() {
-        if (modelConfig.api || modelConfig.createModel || isFunction(modelConfig)) {
-          const p = getModel(modelConfig, ctx)
-            .then((m) => (ctx.model = m.default || m))
-            .catch(noop)
-
-          if (queueModel) {
-            ctx.queue(p)
-          } else {
-            return p
-          }
-        } else {
-          ctx.model = {}
-          const p = Promise.all(values(mapValues(modelConfig, (c, n) =>
-            getModel(c, ctx)
-              .then((m) => (ctx.model[n] = m.default || m))
-              .catch(noop))))
-
-          if (queueModel) {
-            ctx.queue(p)
-          } else {
-            return p
-          }
-        }
-      },
-      beforeDispose() {
-        if (ctx.model.dispose) {
-          ctx.model.dispose()
-        } else {
-          each(ctx.model, (m) => m.dispose ? m.dispose() : false)
-        }
+      if (queueModel) {
+        ctx.queue(p)
+        yield
+      } else {
+        yield p
       }
-    })
+
+      yield
+
+      if (ctx.model.dispose && !_models.createModel) {
+        ctx.model.dispose()
+      } else if (ctx.models) {
+        each(ctx.models, (m, n) => !_models[n].createModel && m.dispose
+          ? m.dispose()
+          : false)
+      }
+    }
   }
 }
 
-export function fetch(model) {
-  return isFunction(model)
-    ? model().then(({ default: _default }) => _default)
-    : model
+export async function fetch(_Model) {
+  return await resolveAny(
+    isFunction(_Model) && !isFunction(_Model.factory)
+      ? _Model()
+      : _Model
+  )
+}
+
+function normalizeConfig(Model, recursive) {
+  if (isPlainObject(Model)) {
+    if (Model.createModel) {
+      return recursive
+        ? Model
+        : { default: Model }
+    } else {
+      return mapValues(Model, (_Model) => normalizeConfig(_Model, true))
+    }
+  } else {
+    return recursive
+      ? {
+        createModel: (params) => Model.factory(params)
+      }
+      : {
+        default: {
+          createModel: (params) => Model.factory(params)
+        }
+      }
+  }
+}
+
+export async function createModels(models, ctx) {
+  const params = getParams(ctx)
+  const ret = {}
+  const p = map(models, (m, name) => resolveAny(m.createModel(params)).then((model) => (ret[name] = model)))
+  await Promise.all(p)
+  return ret
+}
+
+export function attachToCtx(models, ctx) {
+  if (models.default) {
+    ctx.model = models.default
+  } else {
+    ctx.models = models
+  }
 }
 
 function getParams(ctx) {
@@ -59,17 +89,4 @@ function getParams(ctx) {
   }
 
   return ko.pureComputed(() => extend(params, ko.unwrap(query)))
-}
-
-function getModel(modelConfig, ctx) {
-  const params = getParams(ctx)
-
-  if (modelConfig.createModel) {
-    return modelConfig.createModel(ctx)
-  } else if (isFunction(modelConfig)) {
-    return fetch(modelConfig).then((model) => model.factory(params))
-  } else {
-    const Model = createModelConstructor(modelConfig)
-    return Model.factory(params)
-  }
 }
