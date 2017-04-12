@@ -57,7 +57,7 @@ test('caching mixin / basic usage', async () => {
 
 
 test('caching mixin / invalidates on save', async () => {
-  const fetch = jest.fn().mockImplementation(() => Promise.resolve({}))
+  const fetch = jest.fn().mockReturnValue(Promise.resolve({}))
   const save = jest.fn()
   const Model = modelConstructorFactory({
     mixins: [caching()],
@@ -109,4 +109,61 @@ test('caching mixin / invalidates linked models', async () => {
   jest.spyOn(foo, 'reload')
   await bar.invalidate()
   expect(foo.reload).toHaveBeenCalled()
+})
+
+
+test('caching mixin / ttl', async () => {
+  jest.useFakeTimers()
+
+  const fetch = jest.fn().mockReturnValue(Promise.resolve({}))
+  const Foo = modelConstructorFactory({
+    mixins: [caching({
+      ttl: 30
+    })],
+    extend: class {
+      static async fetch() { // eslint-disable-line
+        return fetch()
+      }
+    }
+  })
+
+  const foo = await Foo.factory()
+
+  expect(fetch).toHaveBeenCalledTimes(1)
+
+  foo.reload()
+  expect(fetch).toHaveBeenCalledTimes(1)
+
+  jest.runTimersToTime(60 * 1000)
+
+  foo.reload()
+  expect(fetch).toHaveBeenCalledTimes(2)
+})
+
+test('caching mixin / ttl w/ auto-reload', async () => {
+  jest.useFakeTimers()
+
+  const fetch = jest.fn().mockReturnValue(Promise.resolve({}))
+  const Foo = modelConstructorFactory({
+    mixins: [caching({
+      ttl: 30,
+      ttlAutoReload: true
+    })],
+    extend: class {
+      static async fetch() { // eslint-disable-line
+        return fetch()
+      }
+    }
+  })
+
+  const foo = await Foo.factory()
+
+  expect(fetch).toHaveBeenCalledTimes(1)
+
+  foo.reload()
+  expect(fetch).toHaveBeenCalledTimes(1)
+
+  jest.runTimersToTime(60 * 1000)
+
+  expect(fetch).toHaveBeenCalledTimes(2)
 })

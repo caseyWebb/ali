@@ -19,11 +19,12 @@ export default createModelConstructor({
 
 All options are optional
 
-| Option     | Default   | Description                                                                                                           |
-| ---------- | --------- | --------------------------------------------------------------------------------------------------------------------- |
-| ttl        | 300       | number of seconds to keep cache                                                                                       |
-| linked     | undefined | array of models that should be invalidated when this one is                                                           |
-| trackBy    | undefined | schema to use to track caching. when dealing with lists of data, can lower memory usage. see below for more details.  |
+| Option          | Default   | Description                                                                                                           |
+| --------------- | --------- | --------------------------------------------------------------------------------------------------------------------- |
+| ttl             | Infinity  | number of seconds to keep cache                                                                                       |
+| ttlAutoRefresh  | false     | call `reload` when the cach expires                                                                                   |
+| linked          | undefined | array of models that should be invalidated when this one is                                                           |
+| trackBy         | undefined | schema to use to track caching. when dealing with lists of data, can lower memory usage. see below for more details.  |
 
 ##### Linked Models
 
