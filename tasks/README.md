@@ -1,6 +1,6 @@
 # Building
 
-The client is built using [Webpack][webpack] and [Fly][fly], with build commands
+The client is built using [Webpack](https://webpack.js.org) and [Fly](https://github.com/flyjs/fly), with build commands
 exposed via npm run scripts (the `"scripts"` property in [package.json](../package.json)).
 
 # yarn dev
