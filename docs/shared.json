@@ -1015,120 +1015,124 @@
       "id": 211,
       "meta": {}
     },
-    "./mixins/caching/README.md": {
+    "./mixins/api/README.md": {
       "id": 212,
       "meta": {}
     },
-    "./mixins/tap/README.md": {
+    "./mixins/caching/README.md": {
       "id": 213,
       "meta": {}
     },
-    "./mixins/transform/README.md": {
+    "./mixins/tap/README.md": {
       "id": 214,
       "meta": {}
     },
-    "./plugins/README.md": {
+    "./mixins/transform/README.md": {
       "id": 215,
       "meta": {}
     },
-    "./plugins/component/README.md": {
+    "./plugins/README.md": {
       "id": 216,
       "meta": {}
     },
-    "./plugins/components/README.md": {
+    "./plugins/component/README.md": {
       "id": 217,
       "meta": {}
     },
-    "./plugins/model/README.md": {
+    "./plugins/components/README.md": {
       "id": 218,
       "meta": {}
     },
-    "./plugins/prefetch/README.md": {
+    "./plugins/model/README.md": {
       "id": 219,
       "meta": {}
     },
-    "./plugins/query/README.md": {
+    "./plugins/prefetch/README.md": {
       "id": 220,
       "meta": {}
     },
-    "./plugins/routes/README.md": {
+    "./plugins/query/README.md": {
       "id": 221,
       "meta": {}
     },
-    "./plugins/styles/README.md": {
+    "./plugins/routes/README.md": {
       "id": 222,
       "meta": {}
     },
-    "./plugins/title/README.md": {
+    "./plugins/styles/README.md": {
       "id": 223,
       "meta": {}
     },
-    "./plugins/with/README.md": {
+    "./plugins/title/README.md": {
       "id": 224,
       "meta": {}
     },
-    "./styles/README.md": {
+    "./plugins/with/README.md": {
       "id": 225,
       "meta": {}
     },
-    "./utils/README.md": {
+    "./styles/README.md": {
       "id": 226,
       "meta": {}
     },
-    "./utils/model/README.md": {
+    "./utils/README.md": {
       "id": 227,
       "meta": {}
     },
-    "../../tasks/README.md": {
+    "./utils/model/README.md": {
       "id": 228,
       "meta": {}
     },
-    "../../test/README.md": {
+    "../../tasks/README.md": {
       "id": 229,
       "meta": {}
     },
-    "../../node_modules/ko-component-tester/dist/ko-component-tester.js": {
+    "../../test/README.md": {
       "id": 230,
       "meta": {}
     },
-    "../../node_modules/object-hash/dist/object_hash.js": {
+    "../../node_modules/ko-component-tester/dist/ko-component-tester.js": {
       "id": 231,
       "meta": {}
     },
-    "../../node_modules/path-browserify/index.js": {
+    "../../node_modules/object-hash/dist/object_hash.js": {
       "id": 232,
       "meta": {}
     },
-    "../../node_modules/regenerator-runtime/runtime-module.js": {
+    "../../node_modules/path-browserify/index.js": {
       "id": 233,
       "meta": {}
     },
-    "../../node_modules/regenerator-runtime/runtime.js": {
+    "../../node_modules/regenerator-runtime/runtime-module.js": {
       "id": 234,
       "meta": {}
     },
-    "../../node_modules/style-loader/fixUrls.js": {
+    "../../node_modules/regenerator-runtime/runtime.js": {
       "id": 235,
       "meta": {}
     },
-    "../../node_modules/toprogress/lib/toprogress.js": {
+    "../../node_modules/style-loader/fixUrls.js": {
       "id": 236,
       "meta": {}
     },
-    "./bindings recursive \\.\\/([^\\/_]+)\\/index\\.js$": {
+    "../../node_modules/toprogress/lib/toprogress.js": {
       "id": 237,
       "meta": {}
     },
-    "./components async recursive ^\\.\\/.*\\/index\\.js$": {
+    "./bindings recursive \\.\\/([^\\/_]+)\\/index\\.js$": {
       "id": 238,
       "meta": {}
     },
-    "./extenders recursive \\.\\/([^\\/_]+)\\/index\\.js$": {
+    "./components async recursive ^\\.\\/.*\\/index\\.js$": {
       "id": 239,
       "meta": {}
     },
-    "./filters recursive \\.\\/([^\\/_]+)\\/index\\.js$": {
+    "./extenders recursive \\.\\/([^\\/_]+)\\/index\\.js$": {
       "id": 240,
+      "meta": {}
+    },
+    "./filters recursive \\.\\/([^\\/_]+)\\/index\\.js$": {
+      "id": 241,
       "meta": {}
     }
   }
