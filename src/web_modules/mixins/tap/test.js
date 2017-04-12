@@ -1,12 +1,12 @@
 import { modelConstructorFactory } from 'utils/model'
-import transform from './index'
+import tap from './index'
 
-test('transform mixin', async () => {
+test('tap mixin', async () => {
   const Foo = modelConstructorFactory({
     mixins: [
-      transform((data) => ({
-        oof: data.foo.split('').reverse().join('')
-      }))
+      tap((data) => {
+        data.oof = data.foo.split('').reverse().join('')
+      })
     ],
     extend: class {
       static async fetch() { // eslint-disable-line
@@ -16,6 +16,7 @@ test('transform mixin', async () => {
   })
 
   const foo = await Foo.factory()
-  
+
+  expect(foo.data.foo()).toBe('foo')
   expect(foo.data.oof()).toBe('oof')
 })
