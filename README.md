@@ -75,7 +75,6 @@ offers the best browser support out there and for some of us, that is important.
 [gitter_badge]: https://img.shields.io/gitter/room/caseyWebb/ali.svg
 [gitter_link]: https://gitter.im/caseyWebb/ali
 
-
 [profiscience]: http://profiscience.com
 [knockout]: http://knockoutjs.com
 [knockout-punches]: https://mbest.github.io/knockout.punches/
