@@ -1,4 +1,4 @@
-import { isEmpty, map, omitBy, remove } from 'lodash'
+import { isEmpty, invokeMap, map, omitBy, remove } from 'lodash'
 import ko from 'knockout'
 import hash from 'object-hash'
 
@@ -46,7 +46,7 @@ export default ({
           setTimeout(() => {
             cache.delete(key)
             if (ttlAutoReload) {
-              this.reload()
+              invokeMap(instances, 'reload')
             }
           }, SECOND * ttl)
         }
