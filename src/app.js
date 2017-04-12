@@ -31,7 +31,7 @@ const showOverlay = ko.observable(true)
 
 Router.setConfig({
   hashbang: false,
-  base: '',
+  base: location.hostname.match(/github\.io/) ? '/ali' : '',
   activePathCSSClass: 'is-active'
 })
 

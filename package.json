@@ -35,7 +35,7 @@
     "jquery": "^3.2.1",
     "knockout": "^3.4.2",
     "knockout-punches": "^0.5.1",
-    "ko-component-router": "next",
+    "ko-component-router": "5.0.0-rc.6",
     "ko-contrib-fns": "^0.0.5",
     "ko-contrib-utils": "^0.4.0",
     "ko-querystring": "^2.0.2",
