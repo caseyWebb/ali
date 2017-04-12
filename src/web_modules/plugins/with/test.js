@@ -12,3 +12,12 @@ test('with plugin', () => {
 
   expect(ctx.foo).toBe('foo')
 })
+
+test('with plugin does not break views without it', () => {
+  const ctx = {}
+  const viewDeclaration = {}
+
+  plugin(viewDeclaration)(ctx)
+
+  expect.anything()
+})
