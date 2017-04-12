@@ -8,8 +8,13 @@ export default ({
 }) => {
   if (_models) {
     return function * (ctx) {
+      // we can safely do this b/c the promise chain will be resolved by the router
+      // before continuing to further yields 
+      let normalizedModels
+
       const p = fetch(_models)
         .then((models) => normalizeConfig(models))
+        .then((models) => (normalizedModels = models))
         .then((models) => createModels(models, ctx))
         .then((models) => attachToCtx(models, ctx))
 
@@ -22,10 +27,10 @@ export default ({
 
       yield
 
-      if (ctx.model.dispose && !_models.createModel) {
+      if (ctx.model && ctx.model.dispose && normalizedModels.default._autoDispose !== false) {
         ctx.model.dispose()
       } else if (ctx.models) {
-        each(ctx.models, (m, n) => !_models[n].createModel && m.dispose
+        each(ctx.models, (m, v) => normalizedModels[v]._autoDispose !== false && m.dispose
           ? m.dispose()
           : false)
       }
@@ -44,6 +49,7 @@ export async function fetch(_Model) {
 function normalizeConfig(Model, recursive) {
   if (isPlainObject(Model)) {
     if (Model.createModel) {
+      Model._autoDispose = false
       return recursive
         ? Model
         : { default: Model }

@@ -7,13 +7,10 @@ import { fetch as fetchStyles } from '../styles'
 
 export default ({ routes }) => {
   if (routes) {
-    return () => ({
-      afterRender() {
-        if (routes) {
-          each(routes, (r) => prefetch(r))
-        }
-      }
-    })
+    return function * () {
+      yield
+      each(routes, (r) => prefetch(r))
+    }
   }
 }
 
