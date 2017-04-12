@@ -1,0 +1,13 @@
+language: node_js
+node_js:
+  - stable
+env:
+  - TRAVIS=true
+cache:
+  yarn: true
+  directories:
+    - node_modules
+after_script:
+  - ./node_modules/coveralls/bin/coveralls.js < coverage/lcov.info
+notifications:
+  email: false
