@@ -2,7 +2,7 @@ import { isEmpty, map, omitBy, remove } from 'lodash'
 import ko from 'knockout'
 import hash from 'object-hash'
 
-export default ({ link }) => (_super = class {}) => {
+export default ({ link = [] } = {}) => (_super = class {}) => {
   const cache = new Map()
   const _models = []
 

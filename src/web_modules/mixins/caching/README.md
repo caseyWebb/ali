@@ -22,7 +22,7 @@ All options are optional
 | Option     | Default   | Description                                                                                                           |
 | ---------- | --------- | --------------------------------------------------------------------------------------------------------------------- |
 | ttl        | 300       | number of seconds to keep cache                                                                                       |
-| linked     | undefined | array of models that a) should be invalidated when this one is and b) should invalidate this model when invalidated   |
+| linked     | undefined | array of models that should be invalidated when this one is                                                           |
 | trackBy    | undefined | schema to use to track caching. when dealing with lists of data, can lower memory usage. see below for more details.  |
 
 ##### Linked Models
@@ -48,7 +48,11 @@ const Foo = createModelConstructor({
 })
 ```
 
-Now invalidating either model will ensure that both caches are destroyed.
+Now invalidating Foo will also invalidate Bar.
+
+**NOTE:** This is a one-way operation, so you'll need to link both ways. However,
+because of the way webpack handles circular references (or rather, doesn't), we
+have to catch for this [here]().
 
 ##### Tracking
 
