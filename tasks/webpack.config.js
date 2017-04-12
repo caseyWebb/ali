@@ -96,7 +96,11 @@ module.exports = {
     ...(process.env.NODE_ENV === 'production'
       ? [
         new webpack.optimize.MinChunkSizePlugin({ minChunkSize: 100000 }),
-        new webpack.optimize.UglifyJsPlugin(),
+        new webpack.optimize.UglifyJsPlugin({
+          mangle: {
+            keep_fnames: true
+          }
+        }),
         new CompressionPlugin({
           asset: '[path].gz[query]',
           algorithm: 'gzip',
