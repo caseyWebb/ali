@@ -31,7 +31,7 @@ module.exports = function * (fly) {
   ])
 
   if (PROD) {
-    yield fly.serial(['shared'])
+    yield fly.serial(['vendor', 'shared'])
 
     shared = glob.sync(path.join(dist, 'shared.*.js'))[0]
 
@@ -39,14 +39,19 @@ module.exports = function * (fly) {
       new webpack.DllReferencePlugin({
         context: path.resolve(src, 'web_modules'),
         manifest: require(path.resolve(dist, 'shared.json'))
-      }))
+      }),
+      new webpack.DllReferencePlugin({
+        context: path.resolve(__dirname, '../node_modules'),
+        manifest: require(path.resolve(dist, 'vendor.json'))
+      }),
+      new webpack.optimize.CommonsChunkPlugin({
+        children: true,
+        async: true
+      })
+    )
   }
 
   config.plugins.push(
-    new webpack.DllReferencePlugin({
-      context: path.resolve(__dirname, '../node_modules'),
-      manifest: require(path.resolve(dist, 'vendor.json'))
-    }),
     new HtmlWebpackPlugin({
       template: path.resolve(src, 'index.ejs'),
       vendor: path.relative(dist, vendor),

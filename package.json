@@ -3,7 +3,6 @@
   "version": "0.0.0",
   "description": "The Other knockout-spa \"Framework\"",
   "scripts": {
-    "install": "fly vendor",
     "dev": "NODE_ENV=development fly build",
     "prod": "NODE_ENV=production fly build",
     "start": "fly serve",
