@@ -45,6 +45,7 @@ export default {
   '/mixins': {
     title: 'mixins',
     routes: {
+      '/api':         { title: 'api', component: () => ({ template: import('mixins/api/README.md') }) },
       '/caching':     { title: 'caching', component: () => ({ template: import('mixins/caching/README.md') }) },
       '/tap':         { title: 'tap', component: () => ({ template: import('mixins/tap/README.md') }) },
       '/transform':   { title: 'transform', component: () => ({ template: import('mixins/transform/README.md') }) }
