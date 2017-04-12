@@ -4,7 +4,6 @@
 [![Build Status][travis_badge]][travis_link]
 [![Coverage Status][coveralls_badge]][coveralls_link]
 [![Dependency Status][david_dm_badge]][david_dm_link]
-[![PeerDependency Status][david_dm_peer_badge]][david_dm_peer_link]
 [![DevDependency Status][david_dm_dev_badge]][david_dm_dev_link]
 [![Gitter][gitter_badge]][gitter_link]
 
@@ -71,10 +70,8 @@ offers the best browser support out there and for some of us, that is important.
 [coveralls_link]: https://coveralls.io/github/caseyWebb/ali
 [david_dm_badge]: https://img.shields.io/david/caseyWebb/ali.svg?maxAge=2592000
 [david_dm_link]: https://david-dm.org/caseyWebb/ali
-[david_dm_peer_badge]: https://img.shields.io/david/peer/caseyWebb/ali.svg?maxAge=2592000
-[david_dm_peer_link]: https://david-dm.org/caseyWebb/ali#info=peerDependencies
 [david_dm_dev_badge]: https://img.shields.io/david/dev/caseyWebb/ali.svg?maxAge=2592000
-[david_dm_dev_link]: https://david-dm.org/caseyWebb/ali#info=devDependencies
+[david_dm_dev_link]: https://david-dm.org/caseyWebb/ali#info=dev
 [gitter_badge]: https://img.shields.io/gitter/room/caseyWebb/ali.svg
 [gitter_link]: https://gitter.im/caseyWebb/ali
 
