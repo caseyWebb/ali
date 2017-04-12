@@ -72,8 +72,8 @@ offers the best browser support out there and for some of us, that is important.
 [david_dm_link]: https://david-dm.org/caseyWebb/ali
 [david_dm_dev_badge]: https://img.shields.io/david/dev/caseyWebb/ali.svg?maxAge=2592000
 [david_dm_dev_link]: https://david-dm.org/caseyWebb/ali#info=dev
-[gitter_badge]: https://img.shields.io/gitter/room/caseyWebb/ali.svg
-[gitter_link]: https://gitter.im/caseyWebb/ali
+[gitter_badge]: https://img.shields.io/gitter/room/Profiscience/ali.svg
+[gitter_link]: https://gitter.im/Profiscience/ali
 
 [profiscience]: http://profiscience.com
 [knockout]: http://knockoutjs.com

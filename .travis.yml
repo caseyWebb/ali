@@ -11,3 +11,9 @@ after_script:
   - ./node_modules/coveralls/bin/coveralls.js < coverage/lcov.info
 notifications:
   email: false
+  webhooks:
+    urls:
+      - https://webhooks.gitter.im/e/fd8062e59327c9399c67
+    on_success: change
+    on_failure: always
+    on_start: never
