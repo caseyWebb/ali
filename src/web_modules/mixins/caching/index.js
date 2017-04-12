@@ -10,12 +10,12 @@ export default ({
   ttlAutoReload = false
 } = {}) => (_super = class {}) => {
   const cache = new Map()
-  const _models = []
+  const instances = []
 
   return class extends _super {
     constructor(...args) {
       super(...args)
-      _models.push(this)
+      instances.push(this)
     }
 
     async invalidate() {
@@ -30,7 +30,7 @@ export default ({
 
     dispose(...args) {
       super.dispose(...args)
-      remove(_models, this)
+      remove(instances, this)
     }
 
     static async fetch(params, ...args) {
@@ -43,9 +43,11 @@ export default ({
         const m = await p
         cache.set(key, m)
         if (ttl) {
-          setTimeout(async () => {
+          setTimeout(() => {
             cache.delete(key)
-            await this.invalidate(ttlAutoReload)
+            if (ttlAutoReload) {
+              this.reload()
+            }
           }, SECOND * ttl)
         }
         return m
@@ -56,7 +58,7 @@ export default ({
       cache.clear()
 
       await Promise.all([
-        ...map(_models, (m) => reload ? m.reload() : new Promise((r) => r())),
+        ...map(instances, (m) => reload ? m.reload() : new Promise((r) => r())),
         ...map(link, (m) => m.invalidate(reload))
       ])
     }
