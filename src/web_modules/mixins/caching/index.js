@@ -6,8 +6,8 @@ const SECOND = 1000
 
 export default ({
   link = [],
-  ttl,
-  ttlAutoReload
+  ttl = false,
+  ttlAutoReload = false
 } = {}) => (_super = class {}) => {
   const cache = new Map()
   const _models = []
@@ -45,7 +45,7 @@ export default ({
         if (ttl) {
           setTimeout(async () => {
             cache.delete(key)
-            await this.invalidate()
+            await this.invalidate(ttlAutoReload)
           }, SECOND * ttl)
         }
         return m

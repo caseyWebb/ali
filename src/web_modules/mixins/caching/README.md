@@ -22,7 +22,7 @@ All options are optional
 | Option          | Default   | Description                                                                                                           |
 | --------------- | --------- | --------------------------------------------------------------------------------------------------------------------- |
 | ttl             | Infinity  | number of seconds to keep cache                                                                                       |
-| ttlAutoRefresh  | false     | call `reload` when the cach expires                                                                                   |
+| ttlAutoReload   | false     | call `reload` when the cach expires                                                                                   |
 | linked          | undefined | array of models that should be invalidated when this one is                                                           |
 | trackBy         | undefined | schema to use to track caching. when dealing with lists of data, can lower memory usage. see below for more details.  |
 

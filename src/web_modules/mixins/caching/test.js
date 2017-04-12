@@ -135,7 +135,8 @@ test('caching mixin / ttl', async () => {
   expect(fetch).toHaveBeenCalledTimes(1)
 
   jest.runTimersToTime(60 * 1000)
-
+  
+  expect(fetch).toHaveBeenCalledTimes(1)
   foo.reload()
   expect(fetch).toHaveBeenCalledTimes(2)
 })
