@@ -32,6 +32,9 @@ export function modelConstructorFactory({
     }
 
     dispose() {
+      if (super.dispose) {
+        super.dispose()
+      }
       this._updater.dispose()
     }
 
@@ -41,7 +44,11 @@ export function modelConstructorFactory({
     }
 
     static async fetch(params) { // eslint-disable-line
-      throw new Error('Model.fetch is a stub and requires implementation! Use the ajax mixin or define `static async fetch(params)` in the class provided to `extend`.')
+      if (super.fetch) {
+        return await super.fetch(ko.toJS(params))
+      } else {
+        throw new Error('Model.fetch is a stub and requires implementation! Use the ajax mixin or define `static async fetch(params)` in the class provided to `extend`.')
+      }
     }
   }, ...mixins)
 }
