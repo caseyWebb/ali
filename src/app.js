@@ -28,10 +28,11 @@ import {
 import routes from './routes'
 
 const showOverlay = ko.observable(true)
+const isGitHubPages = location.hostname.match(/github\.io/)
 
 Router.setConfig({
-  hashbang: false,
-  base: location.hostname.match(/github\.io/) ? '/ali' : '',
+  hashbang: isGitHubPages,
+  base: isGitHubPages ? '/ali' : '',
   activePathCSSClass: 'is-active'
 })
 
