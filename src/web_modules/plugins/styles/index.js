@@ -1,20 +1,24 @@
 import { isFunction, invokeMap, map } from 'lodash'
 import castThenable from 'utils/cast-thenable'
 
-export default function plugin({ styles: _styles }) {
+export default ({ styles: _styles }) => {
   if (_styles) {
-    let styles
-    return (ctx) => ({
-      beforeRender() {
-        ctx.queue(fetch(_styles).then((s) => {
-          styles = s
-          invokeMap(styles, 'use')
-        }))
-      },
-      afterDispose() {
-        invokeMap(styles, 'unuse')
-      }
-    })
+    return function * (ctx) {
+      let styles
+
+      const p = fetch(_styles).then((s) => {
+        styles = s
+        invokeMap(styles, 'use')
+      })
+
+      ctx.queue(p)
+
+      yield
+      yield
+      yield
+
+      invokeMap(styles, 'unuse')
+    }
   }
 }
 

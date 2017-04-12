@@ -21,7 +21,7 @@ test('prefetch plugin', () => {
               template: Promise.resolve({ default: 'BAR' })
             }),
             components: jest.fn().mockReturnValue({
-              'bar-subcomponent': Promise.resolve({ template: 'BOR' })
+              'bar-subcomponent': Promise.resolve({ template: 'BAR' })
             }),
             model: jest.fn().mockReturnValue(Promise.resolve()),
             styles: jest.fn().mockReturnValue([Promise.resolve()])
