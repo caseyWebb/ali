@@ -1,24 +1,20 @@
 import { isFunction, extend } from 'lodash'
 import Query from 'ko-querystring'
 
-export default ({ query: queryConfig }) => (ctx) => {
-  const group = ctx.canonicalPath
-
+export default ({ query: queryConfig }) => {
   if (queryConfig) {
-    return {
-      beforeRender() {
-        ctx.query = getQuery(ctx, group, queryConfig)
-      },
-      afterDispose() {
-        if (!queryConfig.createQuery) {
-          ctx.query.dispose()
-        }
-      }
+    return function * (ctx) {
+      ctx.query = getQuery(ctx, queryConfig)
+      yield
+      yield
+      yield
+      ctx.query.dispose()
     }
   }
 }
 
-function getQuery(ctx, group, config) {
+function getQuery(ctx, config) {
+  const group = ctx.canonicalPath
   const raw = extend({}, Query.shared, Query.fromQS(name))
 
   if (isFunction(config)) {

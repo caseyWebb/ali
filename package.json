@@ -85,6 +85,7 @@
       "lcov",
       "html"
     ],
+    "testURL": "http://localhost:8080/",
     "transform": {
       "^.+\\.js$": "babel-jest",
       "^.+\\.html$": "<rootDir>/test/transformers/html.js"
