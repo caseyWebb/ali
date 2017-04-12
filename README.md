@@ -40,8 +40,8 @@ And it includes the following useful libraries:
 
 ## How do I use it?
 
-First, read the [docs and guides](https://caseyWebb.github.io/ali), then when you're ready to start a new app, clone
-this repo, delete the routes, and start coding.
+First, read the [docs](https://caseyWebb.github.io/ali), then when you're ready
+to start a new app, clone this repo, delete the routes, and start coding.
 
 ## Why not X!?!?
 

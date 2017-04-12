@@ -50,13 +50,5 @@ export default {
       '/tap':         { title: 'tap', component: () => ({ template: import('mixins/tap/README.md') }) },
       '/transform':   { title: 'transform', component: () => ({ template: import('mixins/transform/README.md') }) }
     }
-  },
-  '/guides': {
-    title: 'guides',
-    routes: {
-      '/working-with-data': { title: 'Working with Data', component: () => ({ template: import('../guides/working-with-data.md') }) },
-      '/creating-a-view':   { title: 'Creating a View', component: () => ({ template: import('../guides/creating-a-view.md') }) },
-      '/nested-routing':    { title: 'Nested Routing', component: () => ({ template: import('../guides/nested-routing.md') }) }
-    }
   }
 }
