@@ -1,9 +1,6 @@
 import isThenable from './index'
 
-test('isThenable true', () => {
+test('utils/is-thenable', () => {
   expect(isThenable(Promise.resolve())).toBeTruthy()
-})
-
-test('isThenable false', () => {
   expect(isThenable('foo')).toBeFalsy()
 })
