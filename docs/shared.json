@@ -25,28 +25,32 @@
       "id": 7,
       "meta": {}
     },
-    "../../node_modules/babel-runtime/helpers/classCallCheck.js": {
+    "../../node_modules/axios/lib/utils.js": {
       "id": 8,
       "meta": {}
     },
-    "../../node_modules/babel-runtime/helpers/createClass.js": {
+    "../../node_modules/babel-runtime/helpers/classCallCheck.js": {
       "id": 9,
       "meta": {}
     },
-    "../../node_modules/core-js/library/modules/_export.js": {
+    "../../node_modules/babel-runtime/helpers/createClass.js": {
       "id": 10,
       "meta": {}
     },
-    "../../node_modules/core-js/library/modules/_object-dp.js": {
+    "../../node_modules/core-js/library/modules/_export.js": {
       "id": 11,
       "meta": {}
     },
-    "../../node_modules/core-js/library/modules/_descriptors.js": {
+    "../../node_modules/core-js/library/modules/_object-dp.js": {
       "id": 12,
       "meta": {}
     },
-    "../../node_modules/core-js/library/modules/_is-object.js": {
+    "../../node_modules/core-js/library/modules/_descriptors.js": {
       "id": 13,
+      "meta": {}
+    },
+    "../../node_modules/core-js/library/modules/_is-object.js": {
+      "id": 14,
       "meta": {}
     },
     "../../node_modules/core-js/library/modules/_an-object.js": {
@@ -95,7 +99,7 @@
       "meta": {}
     },
     "./utils/resolve-any/index.js": {
-      "id": 25,
+      "id": 26,
       "meta": {
         "harmonyModule": true
       },
@@ -104,35 +108,35 @@
       ]
     },
     "../../node_modules/babel-runtime/helpers/get.js": {
-      "id": 26,
-      "meta": {}
-    },
-    "../../node_modules/core-js/library/modules/_a-function.js": {
       "id": 27,
       "meta": {}
     },
-    "../../node_modules/core-js/library/modules/_cof.js": {
+    "../../node_modules/core-js/library/modules/_a-function.js": {
       "id": 28,
       "meta": {}
     },
-    "../../node_modules/core-js/library/modules/_iterators.js": {
+    "../../node_modules/core-js/library/modules/_cof.js": {
       "id": 29,
       "meta": {}
     },
-    "../../node_modules/core-js/library/modules/_object-create.js": {
+    "../../node_modules/core-js/library/modules/_iterators.js": {
       "id": 30,
       "meta": {}
     },
-    "../../node_modules/core-js/library/modules/_property-desc.js": {
+    "../../node_modules/core-js/library/modules/_object-create.js": {
       "id": 31,
       "meta": {}
     },
-    "../../node_modules/core-js/library/modules/_set-to-string-tag.js": {
+    "../../node_modules/core-js/library/modules/_property-desc.js": {
       "id": 32,
       "meta": {}
     },
-    "./components/side-nav/index.js": {
+    "../../node_modules/core-js/library/modules/_set-to-string-tag.js": {
       "id": 33,
+      "meta": {}
+    },
+    "./components/side-nav/index.js": {
+      "id": 34,
       "meta": {
         "harmonyModule": true
       },
@@ -142,16 +146,6 @@
       ]
     },
     "./plugins/component/index.js": {
-      "id": 34,
-      "meta": {
-        "harmonyModule": true
-      },
-      "exports": [
-        "default",
-        "fetch"
-      ]
-    },
-    "./plugins/components/index.js": {
       "id": 35,
       "meta": {
         "harmonyModule": true
@@ -161,8 +155,18 @@
         "fetch"
       ]
     },
-    "./plugins/model/index.js": {
+    "./plugins/components/index.js": {
       "id": 36,
+      "meta": {
+        "harmonyModule": true
+      },
+      "exports": [
+        "default",
+        "fetch"
+      ]
+    },
+    "./plugins/model/index.js": {
+      "id": 37,
       "meta": {
         "harmonyModule": true
       },
@@ -174,7 +178,7 @@
       ]
     },
     "./plugins/styles/index.js": {
-      "id": 37,
+      "id": 38,
       "meta": {
         "harmonyModule": true
       },
@@ -184,15 +188,6 @@
       ]
     },
     "./utils/cast-thenable/index.js": {
-      "id": 38,
-      "meta": {
-        "harmonyModule": true
-      },
-      "exports": [
-        "default"
-      ]
-    },
-    "./utils/mixin/index.js": {
       "id": 39,
       "meta": {
         "harmonyModule": true
@@ -201,57 +196,52 @@
         "default"
       ]
     },
-    "../../node_modules/core-js/library/modules/_defined.js": {
+    "./utils/mixin/index.js": {
       "id": 40,
-      "meta": {}
+      "meta": {
+        "harmonyModule": true
+      },
+      "exports": [
+        "default"
+      ]
     },
-    "../../node_modules/core-js/library/modules/_for-of.js": {
+    "../../node_modules/core-js/library/modules/_defined.js": {
       "id": 41,
       "meta": {}
     },
-    "../../node_modules/core-js/library/modules/_library.js": {
+    "../../node_modules/core-js/library/modules/_for-of.js": {
       "id": 42,
       "meta": {}
     },
-    "../../node_modules/core-js/library/modules/_object-keys.js": {
+    "../../node_modules/core-js/library/modules/_library.js": {
       "id": 43,
       "meta": {}
     },
-    "../../node_modules/core-js/library/modules/_to-length.js": {
+    "../../node_modules/core-js/library/modules/_object-keys.js": {
       "id": 44,
       "meta": {}
     },
-    "../../node_modules/core-js/library/modules/_to-object.js": {
+    "../../node_modules/core-js/library/modules/_to-length.js": {
       "id": 45,
       "meta": {}
     },
-    "../../node_modules/core-js/library/modules/_uid.js": {
+    "../../node_modules/core-js/library/modules/_to-object.js": {
       "id": 46,
       "meta": {}
     },
-    "../../node_modules/core-js/library/modules/es6.string.iterator.js": {
+    "../../node_modules/core-js/library/modules/_uid.js": {
       "id": 47,
       "meta": {}
     },
-    "./plugins/prefetch/index.js": {
+    "../../node_modules/core-js/library/modules/es6.string.iterator.js": {
       "id": 48,
-      "meta": {
-        "harmonyModule": true
-      },
-      "exports": [
-        "default"
-      ]
+      "meta": {}
     },
-    "./plugins/query/index.js": {
+    "../../node_modules/process/browser.js": {
       "id": 49,
-      "meta": {
-        "harmonyModule": true
-      },
-      "exports": [
-        "default"
-      ]
+      "meta": {}
     },
-    "./plugins/title/index.js": {
+    "./plugins/prefetch/index.js": {
       "id": 50,
       "meta": {
         "harmonyModule": true
@@ -260,7 +250,7 @@
         "default"
       ]
     },
-    "./plugins/with/index.js": {
+    "./plugins/query/index.js": {
       "id": 51,
       "meta": {
         "harmonyModule": true
@@ -269,7 +259,7 @@
         "default"
       ]
     },
-    "./utils/is-thenable/index.js": {
+    "./plugins/title/index.js": {
       "id": 52,
       "meta": {
         "harmonyModule": true
@@ -278,115 +268,105 @@
         "default"
       ]
     },
-    "../../node_modules/core-js/library/modules/_an-instance.js": {
+    "./plugins/with/index.js": {
       "id": 53,
-      "meta": {}
+      "meta": {
+        "harmonyModule": true
+      },
+      "exports": [
+        "default"
+      ]
     },
-    "../../node_modules/core-js/library/modules/_classof.js": {
+    "./utils/is-thenable/index.js": {
       "id": 54,
-      "meta": {}
+      "meta": {
+        "harmonyModule": true
+      },
+      "exports": [
+        "default"
+      ]
     },
-    "../../node_modules/core-js/library/modules/_dom-create.js": {
+    "../../node_modules/axios/index.js": {
       "id": 55,
       "meta": {}
     },
-    "../../node_modules/core-js/library/modules/_enum-bug-keys.js": {
+    "../../node_modules/axios/lib/defaults.js": {
       "id": 56,
       "meta": {}
     },
-    "../../node_modules/core-js/library/modules/_iter-define.js": {
+    "../../node_modules/core-js/library/modules/_an-instance.js": {
       "id": 57,
       "meta": {}
     },
-    "../../node_modules/core-js/library/modules/_meta.js": {
+    "../../node_modules/core-js/library/modules/_classof.js": {
       "id": 58,
       "meta": {}
     },
-    "../../node_modules/core-js/library/modules/_object-gopd.js": {
+    "../../node_modules/core-js/library/modules/_dom-create.js": {
       "id": 59,
       "meta": {}
     },
-    "../../node_modules/core-js/library/modules/_object-pie.js": {
+    "../../node_modules/core-js/library/modules/_enum-bug-keys.js": {
       "id": 60,
       "meta": {}
     },
-    "../../node_modules/core-js/library/modules/_redefine-all.js": {
+    "../../node_modules/core-js/library/modules/_iter-define.js": {
       "id": 61,
       "meta": {}
     },
-    "../../node_modules/core-js/library/modules/_shared-key.js": {
+    "../../node_modules/core-js/library/modules/_meta.js": {
       "id": 62,
       "meta": {}
     },
-    "../../node_modules/core-js/library/modules/_shared.js": {
+    "../../node_modules/core-js/library/modules/_object-gopd.js": {
       "id": 63,
       "meta": {}
     },
-    "../../node_modules/core-js/library/modules/_to-integer.js": {
+    "../../node_modules/core-js/library/modules/_object-pie.js": {
       "id": 64,
       "meta": {}
     },
-    "../../node_modules/core-js/library/modules/_to-primitive.js": {
+    "../../node_modules/core-js/library/modules/_redefine-all.js": {
       "id": 65,
       "meta": {}
     },
-    "../../node_modules/core-js/library/modules/_wks-define.js": {
+    "../../node_modules/core-js/library/modules/_shared-key.js": {
       "id": 66,
       "meta": {}
     },
-    "../../node_modules/core-js/library/modules/_wks-ext.js": {
+    "../../node_modules/core-js/library/modules/_shared.js": {
       "id": 67,
       "meta": {}
     },
-    "../../node_modules/core-js/library/modules/es6.object.to-string.js": {
+    "../../node_modules/core-js/library/modules/_to-integer.js": {
       "id": 68,
       "meta": {}
     },
-    "../../node_modules/core-js/library/modules/web.dom.iterable.js": {
+    "../../node_modules/core-js/library/modules/_to-primitive.js": {
       "id": 69,
       "meta": {}
     },
-    "../../node_modules/style-loader/addStyles.js": {
+    "../../node_modules/core-js/library/modules/_wks-define.js": {
       "id": 70,
       "meta": {}
     },
-    "./components/side-nav/viewModel.js": {
+    "../../node_modules/core-js/library/modules/_wks-ext.js": {
+      "id": 71,
+      "meta": {}
+    },
+    "../../node_modules/core-js/library/modules/es6.object.to-string.js": {
+      "id": 72,
+      "meta": {}
+    },
+    "../../node_modules/core-js/library/modules/web.dom.iterable.js": {
       "id": 73,
-      "meta": {
-        "harmonyModule": true
-      },
-      "exports": [
-        "default"
-      ]
+      "meta": {}
     },
-    "./middleware/loading.js": {
+    "../../node_modules/style-loader/addStyles.js": {
       "id": 74,
-      "meta": {
-        "harmonyModule": true
-      },
-      "exports": [
-        "default"
-      ]
+      "meta": {}
     },
-    "./middleware/logging.js": {
-      "id": 75,
-      "meta": {
-        "harmonyModule": true
-      },
-      "exports": [
-        "default"
-      ]
-    },
-    "./mixins/api/index.js": {
-      "id": 76,
-      "meta": {
-        "harmonyModule": true
-      },
-      "exports": [
-        "default"
-      ]
-    },
-    "./mixins/caching/index.js": {
+    "./components/side-nav/viewModel.js": {
       "id": 77,
       "meta": {
         "harmonyModule": true
@@ -395,7 +375,7 @@
         "default"
       ]
     },
-    "./mixins/tap/index.js": {
+    "./middleware/loading.js": {
       "id": 78,
       "meta": {
         "harmonyModule": true
@@ -404,7 +384,7 @@
         "default"
       ]
     },
-    "./mixins/transform/index.js": {
+    "./middleware/logging.js": {
       "id": 79,
       "meta": {
         "harmonyModule": true
@@ -413,7 +393,7 @@
         "default"
       ]
     },
-    "./plugins/routes/index.js": {
+    "./mixins/api/index.js": {
       "id": 80,
       "meta": {
         "harmonyModule": true
@@ -422,8 +402,44 @@
         "default"
       ]
     },
-    "./utils/index.js": {
+    "./mixins/caching/index.js": {
       "id": 81,
+      "meta": {
+        "harmonyModule": true
+      },
+      "exports": [
+        "default"
+      ]
+    },
+    "./mixins/tap/index.js": {
+      "id": 82,
+      "meta": {
+        "harmonyModule": true
+      },
+      "exports": [
+        "default"
+      ]
+    },
+    "./mixins/transform/index.js": {
+      "id": 83,
+      "meta": {
+        "harmonyModule": true
+      },
+      "exports": [
+        "default"
+      ]
+    },
+    "./plugins/routes/index.js": {
+      "id": 84,
+      "meta": {
+        "harmonyModule": true
+      },
+      "exports": [
+        "default"
+      ]
+    },
+    "./utils/index.js": {
+      "id": 85,
       "meta": {
         "harmonyModule": true
       },
@@ -436,139 +452,163 @@
       ]
     },
     "./components/side-nav/template.html": {
-      "id": 82,
-      "meta": {}
-    },
-    "./styles/main.scss": {
-      "id": 83,
-      "meta": {}
-    },
-    "../../node_modules/babel-runtime/helpers/toConsumableArray.js": {
-      "id": 84,
-      "meta": {}
-    },
-    "../../node_modules/babel-runtime/helpers/typeof.js": {
-      "id": 85,
-      "meta": {}
-    },
-    "../../node_modules/core-js/library/modules/_html.js": {
       "id": 86,
       "meta": {}
     },
-    "../../node_modules/core-js/library/modules/_ie8-dom-define.js": {
+    "./styles/main.scss": {
       "id": 87,
       "meta": {}
     },
-    "../../node_modules/core-js/library/modules/_invoke.js": {
+    "../../node_modules/axios/lib/adapters/xhr.js": {
       "id": 88,
       "meta": {}
     },
-    "../../node_modules/core-js/library/modules/_iobject.js": {
+    "../../node_modules/axios/lib/cancel/Cancel.js": {
       "id": 89,
       "meta": {}
     },
-    "../../node_modules/core-js/library/modules/_is-array-iter.js": {
+    "../../node_modules/axios/lib/cancel/isCancel.js": {
       "id": 90,
       "meta": {}
     },
-    "../../node_modules/core-js/library/modules/_is-array.js": {
+    "../../node_modules/axios/lib/core/createError.js": {
       "id": 91,
       "meta": {}
     },
-    "../../node_modules/core-js/library/modules/_iter-call.js": {
+    "../../node_modules/axios/lib/helpers/bind.js": {
       "id": 92,
       "meta": {}
     },
-    "../../node_modules/core-js/library/modules/_iter-detect.js": {
+    "../../node_modules/babel-runtime/helpers/toConsumableArray.js": {
       "id": 93,
       "meta": {}
     },
-    "../../node_modules/core-js/library/modules/_iter-step.js": {
+    "../../node_modules/babel-runtime/helpers/typeof.js": {
       "id": 94,
       "meta": {}
     },
-    "../../node_modules/core-js/library/modules/_object-gopn.js": {
+    "../../node_modules/buffer/index.js": {
       "id": 95,
       "meta": {}
     },
-    "../../node_modules/core-js/library/modules/_object-gops.js": {
+    "../../node_modules/core-js/library/modules/_html.js": {
       "id": 96,
       "meta": {}
     },
-    "../../node_modules/core-js/library/modules/_object-gpo.js": {
+    "../../node_modules/core-js/library/modules/_ie8-dom-define.js": {
       "id": 97,
       "meta": {}
     },
-    "../../node_modules/core-js/library/modules/_object-keys-internal.js": {
+    "../../node_modules/core-js/library/modules/_invoke.js": {
       "id": 98,
       "meta": {}
     },
-    "../../node_modules/core-js/library/modules/_object-sap.js": {
+    "../../node_modules/core-js/library/modules/_iobject.js": {
       "id": 99,
       "meta": {}
     },
-    "../../node_modules/core-js/library/modules/_redefine.js": {
+    "../../node_modules/core-js/library/modules/_is-array-iter.js": {
       "id": 100,
       "meta": {}
     },
-    "../../node_modules/core-js/library/modules/_set-species.js": {
+    "../../node_modules/core-js/library/modules/_is-array.js": {
       "id": 101,
       "meta": {}
     },
-    "../../node_modules/core-js/library/modules/_task.js": {
+    "../../node_modules/core-js/library/modules/_iter-call.js": {
       "id": 102,
       "meta": {}
     },
-    "../../node_modules/core-js/library/modules/core.get-iterator-method.js": {
+    "../../node_modules/core-js/library/modules/_iter-detect.js": {
       "id": 103,
       "meta": {}
     },
-    "../../node_modules/css-loader/lib/css-base.js": {
+    "../../node_modules/core-js/library/modules/_iter-step.js": {
       "id": 104,
       "meta": {}
     },
-    "./components recursive \\.\\/([^\\/_]+)\\/index\\.js$": {
+    "../../node_modules/core-js/library/modules/_object-gopn.js": {
       "id": 105,
       "meta": {}
     },
-    "./bindings/index.js": {
+    "../../node_modules/core-js/library/modules/_object-gops.js": {
+      "id": 106,
+      "meta": {}
+    },
+    "../../node_modules/core-js/library/modules/_object-gpo.js": {
+      "id": 107,
+      "meta": {}
+    },
+    "../../node_modules/core-js/library/modules/_object-keys-internal.js": {
+      "id": 108,
+      "meta": {}
+    },
+    "../../node_modules/core-js/library/modules/_object-sap.js": {
       "id": 109,
+      "meta": {}
+    },
+    "../../node_modules/core-js/library/modules/_redefine.js": {
+      "id": 110,
+      "meta": {}
+    },
+    "../../node_modules/core-js/library/modules/_set-species.js": {
+      "id": 111,
+      "meta": {}
+    },
+    "../../node_modules/core-js/library/modules/_task.js": {
+      "id": 112,
+      "meta": {}
+    },
+    "../../node_modules/core-js/library/modules/core.get-iterator-method.js": {
+      "id": 113,
+      "meta": {}
+    },
+    "../../node_modules/css-loader/lib/css-base.js": {
+      "id": 114,
+      "meta": {}
+    },
+    "./components recursive \\.\\/([^\\/_]+)\\/index\\.js$": {
+      "id": 115,
+      "meta": {}
+    },
+    "./bindings/index.js": {
+      "id": 117,
       "meta": {
         "harmonyModule": true
       }
     },
     "./components/index.js": {
-      "id": 110,
+      "id": 118,
       "meta": {
         "harmonyModule": true
       }
     },
     "./components/lazy.js": {
-      "id": 111,
+      "id": 119,
       "meta": {
         "harmonyModule": true
       }
     },
     "./components/side-nav/test.js": {
-      "id": 112,
+      "id": 120,
       "meta": {
         "harmonyModule": true
       }
     },
     "./extenders/index.js": {
-      "id": 113,
+      "id": 121,
       "meta": {
         "harmonyModule": true
       }
     },
     "./filters/index.js": {
-      "id": 114,
+      "id": 122,
       "meta": {
         "harmonyModule": true
       }
     },
     "./middleware/index.js": {
-      "id": 115,
+      "id": 123,
       "meta": {
         "harmonyModule": true
       },
@@ -578,43 +618,43 @@
       ]
     },
     "./mixins/api/test.js": {
-      "id": 116,
+      "id": 124,
       "meta": {
         "harmonyModule": true
       }
     },
     "./mixins/caching/test.js": {
-      "id": 117,
+      "id": 125,
       "meta": {
         "harmonyModule": true
       }
     },
     "./mixins/tap/test.js": {
-      "id": 118,
+      "id": 126,
       "meta": {
         "harmonyModule": true
       }
     },
     "./mixins/transform/test.js": {
-      "id": 119,
+      "id": 127,
       "meta": {
         "harmonyModule": true
       }
     },
     "./plugins/component/test.js": {
-      "id": 120,
+      "id": 128,
       "meta": {
         "harmonyModule": true
       }
     },
     "./plugins/components/test.js": {
-      "id": 121,
+      "id": 129,
       "meta": {
         "harmonyModule": true
       }
     },
     "./plugins/index.js": {
-      "id": 122,
+      "id": 130,
       "meta": {
         "harmonyModule": true
       },
@@ -631,99 +671,167 @@
       ]
     },
     "./plugins/model/test.js": {
-      "id": 123,
-      "meta": {
-        "harmonyModule": true
-      }
-    },
-    "./plugins/prefetch/test.js": {
-      "id": 124,
-      "meta": {
-        "harmonyModule": true
-      }
-    },
-    "./plugins/query/test.js": {
-      "id": 125,
-      "meta": {
-        "harmonyModule": true
-      }
-    },
-    "./plugins/styles/test.js": {
-      "id": 126,
-      "meta": {
-        "harmonyModule": true
-      }
-    },
-    "./plugins/title/test.js": {
-      "id": 127,
-      "meta": {
-        "harmonyModule": true
-      }
-    },
-    "./plugins/with/test.js": {
-      "id": 128,
-      "meta": {
-        "harmonyModule": true
-      }
-    },
-    "./styles/index.js": {
-      "id": 129,
-      "meta": {
-        "harmonyModule": true
-      }
-    },
-    "./utils/cast-thenable/test.js": {
-      "id": 130,
-      "meta": {
-        "harmonyModule": true
-      }
-    },
-    "./utils/is-thenable/test.js": {
       "id": 131,
       "meta": {
         "harmonyModule": true
       }
     },
-    "./utils/mixin/test.js": {
+    "./plugins/prefetch/test.js": {
       "id": 132,
       "meta": {
         "harmonyModule": true
       }
     },
-    "./utils/model/test.js": {
+    "./plugins/query/test.js": {
       "id": 133,
       "meta": {
         "harmonyModule": true
       }
     },
-    "./utils/resolve-any/test.js": {
+    "./plugins/styles/test.js": {
       "id": 134,
       "meta": {
         "harmonyModule": true
       }
     },
-    "./styles/_layout.scss": {
+    "./plugins/title/test.js": {
       "id": 135,
+      "meta": {
+        "harmonyModule": true
+      }
+    },
+    "./plugins/with/test.js": {
+      "id": 136,
+      "meta": {
+        "harmonyModule": true
+      }
+    },
+    "./styles/index.js": {
+      "id": 137,
+      "meta": {
+        "harmonyModule": true
+      }
+    },
+    "./utils/cast-thenable/test.js": {
+      "id": 138,
+      "meta": {
+        "harmonyModule": true
+      }
+    },
+    "./utils/is-thenable/test.js": {
+      "id": 139,
+      "meta": {
+        "harmonyModule": true
+      }
+    },
+    "./utils/mixin/test.js": {
+      "id": 140,
+      "meta": {
+        "harmonyModule": true
+      }
+    },
+    "./utils/model/test.js": {
+      "id": 141,
+      "meta": {
+        "harmonyModule": true
+      }
+    },
+    "./utils/resolve-any/test.js": {
+      "id": 142,
+      "meta": {
+        "harmonyModule": true
+      }
+    },
+    "./styles/_layout.scss": {
+      "id": 143,
       "meta": {}
     },
     "./styles/_typography.scss": {
-      "id": 136,
+      "id": 144,
       "meta": {}
     },
     "../../node_modules/axios-mock-adapter/src/handle_request.js": {
-      "id": 137,
+      "id": 145,
       "meta": {}
     },
     "../../node_modules/axios-mock-adapter/src/index.js": {
-      "id": 138,
+      "id": 146,
       "meta": {}
     },
     "../../node_modules/axios-mock-adapter/src/utils.js": {
-      "id": 139,
+      "id": 147,
+      "meta": {}
+    },
+    "../../node_modules/axios/lib/axios.js": {
+      "id": 148,
+      "meta": {}
+    },
+    "../../node_modules/axios/lib/cancel/CancelToken.js": {
+      "id": 149,
+      "meta": {}
+    },
+    "../../node_modules/axios/lib/core/Axios.js": {
+      "id": 150,
+      "meta": {}
+    },
+    "../../node_modules/axios/lib/core/InterceptorManager.js": {
+      "id": 151,
+      "meta": {}
+    },
+    "../../node_modules/axios/lib/core/dispatchRequest.js": {
+      "id": 152,
+      "meta": {}
+    },
+    "../../node_modules/axios/lib/core/enhanceError.js": {
+      "id": 153,
+      "meta": {}
+    },
+    "../../node_modules/axios/lib/core/settle.js": {
+      "id": 154,
+      "meta": {}
+    },
+    "../../node_modules/axios/lib/core/transformData.js": {
+      "id": 155,
+      "meta": {}
+    },
+    "../../node_modules/axios/lib/helpers/btoa.js": {
+      "id": 156,
+      "meta": {}
+    },
+    "../../node_modules/axios/lib/helpers/buildURL.js": {
+      "id": 157,
+      "meta": {}
+    },
+    "../../node_modules/axios/lib/helpers/combineURLs.js": {
+      "id": 158,
+      "meta": {}
+    },
+    "../../node_modules/axios/lib/helpers/cookies.js": {
+      "id": 159,
+      "meta": {}
+    },
+    "../../node_modules/axios/lib/helpers/isAbsoluteURL.js": {
+      "id": 160,
+      "meta": {}
+    },
+    "../../node_modules/axios/lib/helpers/isURLSameOrigin.js": {
+      "id": 161,
+      "meta": {}
+    },
+    "../../node_modules/axios/lib/helpers/normalizeHeaderName.js": {
+      "id": 162,
+      "meta": {}
+    },
+    "../../node_modules/axios/lib/helpers/parseHeaders.js": {
+      "id": 163,
+      "meta": {}
+    },
+    "../../node_modules/axios/lib/helpers/spread.js": {
+      "id": 164,
       "meta": {}
     },
     "../routes.js": {
-      "id": 140,
+      "id": 165,
       "meta": {
         "harmonyModule": true
       },
@@ -732,407 +840,407 @@
       ]
     },
     "../../node_modules/babel-runtime/core-js/array/from.js": {
-      "id": 141,
-      "meta": {}
-    },
-    "../../node_modules/babel-runtime/core-js/map.js": {
-      "id": 142,
-      "meta": {}
-    },
-    "../../node_modules/babel-runtime/core-js/object/create.js": {
-      "id": 143,
-      "meta": {}
-    },
-    "../../node_modules/babel-runtime/core-js/object/define-property.js": {
-      "id": 144,
-      "meta": {}
-    },
-    "../../node_modules/babel-runtime/core-js/object/get-own-property-descriptor.js": {
-      "id": 145,
-      "meta": {}
-    },
-    "../../node_modules/babel-runtime/core-js/object/set-prototype-of.js": {
-      "id": 146,
-      "meta": {}
-    },
-    "../../node_modules/babel-runtime/core-js/reflect/construct.js": {
-      "id": 147,
-      "meta": {}
-    },
-    "../../node_modules/babel-runtime/core-js/symbol.js": {
-      "id": 148,
-      "meta": {}
-    },
-    "../../node_modules/babel-runtime/core-js/symbol/iterator.js": {
-      "id": 149,
-      "meta": {}
-    },
-    "../../node_modules/core-js/library/fn/array/from.js": {
-      "id": 150,
-      "meta": {}
-    },
-    "../../node_modules/core-js/library/fn/map.js": {
-      "id": 151,
-      "meta": {}
-    },
-    "../../node_modules/core-js/library/fn/object/create.js": {
-      "id": 152,
-      "meta": {}
-    },
-    "../../node_modules/core-js/library/fn/object/define-property.js": {
-      "id": 153,
-      "meta": {}
-    },
-    "../../node_modules/core-js/library/fn/object/get-own-property-descriptor.js": {
-      "id": 154,
-      "meta": {}
-    },
-    "../../node_modules/core-js/library/fn/object/get-prototype-of.js": {
-      "id": 155,
-      "meta": {}
-    },
-    "../../node_modules/core-js/library/fn/object/set-prototype-of.js": {
-      "id": 156,
-      "meta": {}
-    },
-    "../../node_modules/core-js/library/fn/promise.js": {
-      "id": 157,
-      "meta": {}
-    },
-    "../../node_modules/core-js/library/fn/reflect/construct.js": {
-      "id": 158,
-      "meta": {}
-    },
-    "../../node_modules/core-js/library/fn/symbol/index.js": {
-      "id": 159,
-      "meta": {}
-    },
-    "../../node_modules/core-js/library/fn/symbol/iterator.js": {
-      "id": 160,
-      "meta": {}
-    },
-    "../../node_modules/core-js/library/modules/_add-to-unscopables.js": {
-      "id": 161,
-      "meta": {}
-    },
-    "../../node_modules/core-js/library/modules/_array-from-iterable.js": {
-      "id": 162,
-      "meta": {}
-    },
-    "../../node_modules/core-js/library/modules/_array-includes.js": {
-      "id": 163,
-      "meta": {}
-    },
-    "../../node_modules/core-js/library/modules/_array-methods.js": {
-      "id": 164,
-      "meta": {}
-    },
-    "../../node_modules/core-js/library/modules/_array-species-constructor.js": {
-      "id": 165,
-      "meta": {}
-    },
-    "../../node_modules/core-js/library/modules/_array-species-create.js": {
       "id": 166,
       "meta": {}
     },
-    "../../node_modules/core-js/library/modules/_bind.js": {
+    "../../node_modules/babel-runtime/core-js/map.js": {
       "id": 167,
       "meta": {}
     },
-    "../../node_modules/core-js/library/modules/_collection-strong.js": {
+    "../../node_modules/babel-runtime/core-js/object/create.js": {
       "id": 168,
       "meta": {}
     },
-    "../../node_modules/core-js/library/modules/_collection-to-json.js": {
+    "../../node_modules/babel-runtime/core-js/object/define-property.js": {
       "id": 169,
       "meta": {}
     },
-    "../../node_modules/core-js/library/modules/_collection.js": {
+    "../../node_modules/babel-runtime/core-js/object/get-own-property-descriptor.js": {
       "id": 170,
       "meta": {}
     },
-    "../../node_modules/core-js/library/modules/_create-property.js": {
+    "../../node_modules/babel-runtime/core-js/object/set-prototype-of.js": {
       "id": 171,
       "meta": {}
     },
-    "../../node_modules/core-js/library/modules/_enum-keys.js": {
+    "../../node_modules/babel-runtime/core-js/reflect/construct.js": {
       "id": 172,
       "meta": {}
     },
-    "../../node_modules/core-js/library/modules/_iter-create.js": {
+    "../../node_modules/babel-runtime/core-js/symbol.js": {
       "id": 173,
       "meta": {}
     },
-    "../../node_modules/core-js/library/modules/_keyof.js": {
+    "../../node_modules/babel-runtime/core-js/symbol/iterator.js": {
       "id": 174,
       "meta": {}
     },
-    "../../node_modules/core-js/library/modules/_microtask.js": {
+    "../../node_modules/base64-js/index.js": {
       "id": 175,
       "meta": {}
     },
-    "../../node_modules/core-js/library/modules/_object-dps.js": {
+    "../../node_modules/core-js/library/fn/array/from.js": {
       "id": 176,
       "meta": {}
     },
-    "../../node_modules/core-js/library/modules/_object-gopn-ext.js": {
+    "../../node_modules/core-js/library/fn/map.js": {
       "id": 177,
       "meta": {}
     },
-    "../../node_modules/core-js/library/modules/_set-proto.js": {
+    "../../node_modules/core-js/library/fn/object/create.js": {
       "id": 178,
       "meta": {}
     },
-    "../../node_modules/core-js/library/modules/_species-constructor.js": {
+    "../../node_modules/core-js/library/fn/object/define-property.js": {
       "id": 179,
       "meta": {}
     },
-    "../../node_modules/core-js/library/modules/_string-at.js": {
+    "../../node_modules/core-js/library/fn/object/get-own-property-descriptor.js": {
       "id": 180,
       "meta": {}
     },
-    "../../node_modules/core-js/library/modules/_to-index.js": {
+    "../../node_modules/core-js/library/fn/object/get-prototype-of.js": {
       "id": 181,
       "meta": {}
     },
-    "../../node_modules/core-js/library/modules/es6.array.from.js": {
+    "../../node_modules/core-js/library/fn/object/set-prototype-of.js": {
       "id": 182,
       "meta": {}
     },
-    "../../node_modules/core-js/library/modules/es6.array.iterator.js": {
+    "../../node_modules/core-js/library/fn/promise.js": {
       "id": 183,
       "meta": {}
     },
-    "../../node_modules/core-js/library/modules/es6.map.js": {
+    "../../node_modules/core-js/library/fn/reflect/construct.js": {
       "id": 184,
       "meta": {}
     },
-    "../../node_modules/core-js/library/modules/es6.object.create.js": {
+    "../../node_modules/core-js/library/fn/symbol/index.js": {
       "id": 185,
       "meta": {}
     },
-    "../../node_modules/core-js/library/modules/es6.object.define-property.js": {
+    "../../node_modules/core-js/library/fn/symbol/iterator.js": {
       "id": 186,
       "meta": {}
     },
-    "../../node_modules/core-js/library/modules/es6.object.get-own-property-descriptor.js": {
+    "../../node_modules/core-js/library/modules/_add-to-unscopables.js": {
       "id": 187,
       "meta": {}
     },
-    "../../node_modules/core-js/library/modules/es6.object.get-prototype-of.js": {
+    "../../node_modules/core-js/library/modules/_array-from-iterable.js": {
       "id": 188,
       "meta": {}
     },
-    "../../node_modules/core-js/library/modules/es6.object.set-prototype-of.js": {
+    "../../node_modules/core-js/library/modules/_array-includes.js": {
       "id": 189,
       "meta": {}
     },
-    "../../node_modules/core-js/library/modules/es6.promise.js": {
+    "../../node_modules/core-js/library/modules/_array-methods.js": {
       "id": 190,
       "meta": {}
     },
-    "../../node_modules/core-js/library/modules/es6.reflect.construct.js": {
+    "../../node_modules/core-js/library/modules/_array-species-constructor.js": {
       "id": 191,
       "meta": {}
     },
-    "../../node_modules/core-js/library/modules/es6.symbol.js": {
+    "../../node_modules/core-js/library/modules/_array-species-create.js": {
       "id": 192,
       "meta": {}
     },
-    "../../node_modules/core-js/library/modules/es7.map.to-json.js": {
+    "../../node_modules/core-js/library/modules/_bind.js": {
       "id": 193,
       "meta": {}
     },
-    "../../node_modules/core-js/library/modules/es7.symbol.async-iterator.js": {
+    "../../node_modules/core-js/library/modules/_collection-strong.js": {
       "id": 194,
       "meta": {}
     },
-    "../../node_modules/core-js/library/modules/es7.symbol.observable.js": {
+    "../../node_modules/core-js/library/modules/_collection-to-json.js": {
       "id": 195,
       "meta": {}
     },
-    "../../node_modules/css-loader/index.js!../../node_modules/sass-loader/lib/loader.js!./styles/_layout.scss": {
+    "../../node_modules/core-js/library/modules/_collection.js": {
       "id": 196,
       "meta": {}
     },
-    "../../node_modules/css-loader/index.js!../../node_modules/sass-loader/lib/loader.js!./styles/_typography.scss": {
+    "../../node_modules/core-js/library/modules/_create-property.js": {
       "id": 197,
-      "meta": null
+      "meta": {}
     },
-    "../../node_modules/css-loader/index.js!../../node_modules/sass-loader/lib/loader.js!./styles/main.scss": {
+    "../../node_modules/core-js/library/modules/_enum-keys.js": {
       "id": 198,
       "meta": {}
     },
-    "../../node_modules/deep-equal/index.js": {
+    "../../node_modules/core-js/library/modules/_iter-create.js": {
       "id": 199,
       "meta": {}
     },
-    "../../node_modules/deep-equal/lib/is_arguments.js": {
+    "../../node_modules/core-js/library/modules/_keyof.js": {
       "id": 200,
       "meta": {}
     },
-    "../../node_modules/deep-equal/lib/keys.js": {
+    "../../node_modules/core-js/library/modules/_microtask.js": {
       "id": 201,
       "meta": {}
     },
-    "../../README.md": {
+    "../../node_modules/core-js/library/modules/_object-dps.js": {
       "id": 202,
       "meta": {}
     },
-    "../../guides/creating-a-view.md": {
+    "../../node_modules/core-js/library/modules/_object-gopn-ext.js": {
       "id": 203,
       "meta": {}
     },
-    "../../guides/nested-routing.md": {
+    "../../node_modules/core-js/library/modules/_set-proto.js": {
       "id": 204,
       "meta": {}
     },
-    "../../guides/working-with-data.md": {
+    "../../node_modules/core-js/library/modules/_species-constructor.js": {
       "id": 205,
       "meta": {}
     },
-    "./bindings/README.md": {
+    "../../node_modules/core-js/library/modules/_string-at.js": {
       "id": 206,
       "meta": {}
     },
-    "./components/README.md": {
+    "../../node_modules/core-js/library/modules/_to-index.js": {
       "id": 207,
       "meta": {}
     },
-    "./extenders/README.md": {
+    "../../node_modules/core-js/library/modules/es6.array.from.js": {
       "id": 208,
       "meta": {}
     },
-    "./filters/README.md": {
+    "../../node_modules/core-js/library/modules/es6.array.iterator.js": {
       "id": 209,
       "meta": {}
     },
-    "./middleware/README.md": {
+    "../../node_modules/core-js/library/modules/es6.map.js": {
       "id": 210,
       "meta": {}
     },
-    "./mixins/README.md": {
+    "../../node_modules/core-js/library/modules/es6.object.create.js": {
       "id": 211,
       "meta": {}
     },
-    "./mixins/api/README.md": {
+    "../../node_modules/core-js/library/modules/es6.object.define-property.js": {
       "id": 212,
       "meta": {}
     },
-    "./mixins/caching/README.md": {
+    "../../node_modules/core-js/library/modules/es6.object.get-own-property-descriptor.js": {
       "id": 213,
       "meta": {}
     },
-    "./mixins/tap/README.md": {
+    "../../node_modules/core-js/library/modules/es6.object.get-prototype-of.js": {
       "id": 214,
       "meta": {}
     },
-    "./mixins/transform/README.md": {
+    "../../node_modules/core-js/library/modules/es6.object.set-prototype-of.js": {
       "id": 215,
       "meta": {}
     },
-    "./plugins/README.md": {
+    "../../node_modules/core-js/library/modules/es6.promise.js": {
       "id": 216,
       "meta": {}
     },
-    "./plugins/component/README.md": {
+    "../../node_modules/core-js/library/modules/es6.reflect.construct.js": {
       "id": 217,
       "meta": {}
     },
-    "./plugins/components/README.md": {
+    "../../node_modules/core-js/library/modules/es6.symbol.js": {
       "id": 218,
       "meta": {}
     },
-    "./plugins/model/README.md": {
+    "../../node_modules/core-js/library/modules/es7.map.to-json.js": {
       "id": 219,
       "meta": {}
     },
-    "./plugins/prefetch/README.md": {
+    "../../node_modules/core-js/library/modules/es7.symbol.async-iterator.js": {
       "id": 220,
       "meta": {}
     },
-    "./plugins/query/README.md": {
+    "../../node_modules/core-js/library/modules/es7.symbol.observable.js": {
       "id": 221,
       "meta": {}
     },
-    "./plugins/routes/README.md": {
+    "../../node_modules/css-loader/index.js!../../node_modules/sass-loader/lib/loader.js!./styles/_layout.scss": {
       "id": 222,
       "meta": {}
     },
-    "./plugins/styles/README.md": {
+    "../../node_modules/css-loader/index.js!../../node_modules/sass-loader/lib/loader.js!./styles/_typography.scss": {
       "id": 223,
-      "meta": {}
+      "meta": null
     },
-    "./plugins/title/README.md": {
+    "../../node_modules/css-loader/index.js!../../node_modules/sass-loader/lib/loader.js!./styles/main.scss": {
       "id": 224,
       "meta": {}
     },
-    "./plugins/with/README.md": {
+    "../../node_modules/deep-equal/index.js": {
       "id": 225,
       "meta": {}
     },
-    "./styles/README.md": {
+    "../../node_modules/deep-equal/lib/is_arguments.js": {
       "id": 226,
       "meta": {}
     },
-    "./utils/README.md": {
+    "../../node_modules/deep-equal/lib/keys.js": {
       "id": 227,
       "meta": {}
     },
-    "./utils/model/README.md": {
+    "../../README.md": {
       "id": 228,
       "meta": {}
     },
-    "../../tasks/README.md": {
+    "./bindings/README.md": {
       "id": 229,
       "meta": {}
     },
-    "../../test/README.md": {
+    "./components/README.md": {
       "id": 230,
       "meta": {}
     },
-    "../../node_modules/ko-component-tester/dist/ko-component-tester.js": {
+    "./extenders/README.md": {
       "id": 231,
       "meta": {}
     },
-    "../../node_modules/object-hash/dist/object_hash.js": {
+    "./filters/README.md": {
       "id": 232,
       "meta": {}
     },
-    "../../node_modules/path-browserify/index.js": {
+    "./middleware/README.md": {
       "id": 233,
       "meta": {}
     },
-    "../../node_modules/regenerator-runtime/runtime-module.js": {
+    "./mixins/README.md": {
       "id": 234,
       "meta": {}
     },
-    "../../node_modules/regenerator-runtime/runtime.js": {
+    "./mixins/api/README.md": {
       "id": 235,
       "meta": {}
     },
-    "../../node_modules/style-loader/fixUrls.js": {
+    "./mixins/caching/README.md": {
       "id": 236,
       "meta": {}
     },
-    "../../node_modules/toprogress/lib/toprogress.js": {
+    "./mixins/tap/README.md": {
       "id": 237,
       "meta": {}
     },
-    "./bindings recursive \\.\\/([^\\/_]+)\\/index\\.js$": {
+    "./mixins/transform/README.md": {
       "id": 238,
       "meta": {}
     },
-    "./components async recursive ^\\.\\/.*\\/index\\.js$": {
+    "./plugins/README.md": {
       "id": 239,
       "meta": {}
     },
-    "./extenders recursive \\.\\/([^\\/_]+)\\/index\\.js$": {
+    "./plugins/component/README.md": {
       "id": 240,
       "meta": {}
     },
-    "./filters recursive \\.\\/([^\\/_]+)\\/index\\.js$": {
+    "./plugins/components/README.md": {
       "id": 241,
+      "meta": {}
+    },
+    "./plugins/model/README.md": {
+      "id": 242,
+      "meta": {}
+    },
+    "./plugins/prefetch/README.md": {
+      "id": 243,
+      "meta": {}
+    },
+    "./plugins/query/README.md": {
+      "id": 244,
+      "meta": {}
+    },
+    "./plugins/routes/README.md": {
+      "id": 245,
+      "meta": {}
+    },
+    "./plugins/styles/README.md": {
+      "id": 246,
+      "meta": {}
+    },
+    "./plugins/title/README.md": {
+      "id": 247,
+      "meta": {}
+    },
+    "./plugins/with/README.md": {
+      "id": 248,
+      "meta": {}
+    },
+    "./styles/README.md": {
+      "id": 249,
+      "meta": {}
+    },
+    "./utils/README.md": {
+      "id": 250,
+      "meta": {}
+    },
+    "./utils/model/README.md": {
+      "id": 251,
+      "meta": {}
+    },
+    "../../tasks/README.md": {
+      "id": 252,
+      "meta": {}
+    },
+    "../../test/README.md": {
+      "id": 253,
+      "meta": {}
+    },
+    "../../node_modules/ieee754/index.js": {
+      "id": 254,
+      "meta": {}
+    },
+    "../../node_modules/isarray/index.js": {
+      "id": 255,
+      "meta": {}
+    },
+    "../../node_modules/ko-component-tester/dist/ko-component-tester.js": {
+      "id": 256,
+      "meta": {}
+    },
+    "../../node_modules/object-hash/dist/object_hash.js": {
+      "id": 257,
+      "meta": {}
+    },
+    "../../node_modules/path-browserify/index.js": {
+      "id": 258,
+      "meta": {}
+    },
+    "../../node_modules/regenerator-runtime/runtime-module.js": {
+      "id": 259,
+      "meta": {}
+    },
+    "../../node_modules/regenerator-runtime/runtime.js": {
+      "id": 260,
+      "meta": {}
+    },
+    "../../node_modules/style-loader/fixUrls.js": {
+      "id": 261,
+      "meta": {}
+    },
+    "../../node_modules/toprogress/lib/toprogress.js": {
+      "id": 262,
+      "meta": {}
+    },
+    "./bindings recursive \\.\\/([^\\/_]+)\\/index\\.js$": {
+      "id": 263,
+      "meta": {}
+    },
+    "./components async recursive ^\\.\\/.*\\/index\\.js$": {
+      "id": 264,
+      "meta": {}
+    },
+    "./extenders recursive \\.\\/([^\\/_]+)\\/index\\.js$": {
+      "id": 265,
+      "meta": {}
+    },
+    "./filters recursive \\.\\/([^\\/_]+)\\/index\\.js$": {
+      "id": 266,
       "meta": {}
     }
   }
