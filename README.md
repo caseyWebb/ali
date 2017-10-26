@@ -1,5 +1,7 @@
 # Ali
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/caseyWebb/ali.svg)](https://greenkeeper.io/)
+
 [![License][license_badge]][license_link]
 [![Build Status][travis_badge]][travis_link]
 [![Coverage Status][coveralls_badge]][coveralls_link]
