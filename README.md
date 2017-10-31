@@ -9,6 +9,8 @@
 
 An opinionated meta-framework for building model SPAS with [KnockoutJS][knockout]
 
+**Want to help turn ali into an actual framework of sorts, with modules and such? Check out the `v1` branch!**
+
 ## What is it?
 
 A loose collection of packages, some minimal boilerplate, and a set of best-practices
