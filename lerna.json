@@ -1,0 +1,20 @@
+{
+  "lerna": "2.4.0",
+  "version": "independent",
+  "npmClient": "yarn",
+  "useWorkspaces": true,
+  "command": {
+    "publish": {
+      "ignoreChanges": [
+        "**/docs/**",
+        "**/examples/**",
+        "**/__tests__/**",
+        "**/*.test.ts",
+        "**/*.test.tsx",
+        "**/test.ts",
+        "**/test.tsx",
+        "**/*.md"
+      ]
+    }
+  }
+}
