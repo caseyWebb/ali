@@ -35,7 +35,7 @@
     "postcss-loader": "^3.0.0",
     "style-loader": "^0.23.1",
     "thread-loader": "^2.1.2",
-    "true-case-path": "^1.0.3",
+    "true-case-path": "^2.0.0",
     "webpack": "^4.29.6",
     "webpack-bundle-analyzer": "^3.1.0",
     "webpack-dev-server": "^3.2.1",
