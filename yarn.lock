@@ -11889,12 +11889,10 @@ trim-right@^1.0.1:
   resolved "https://registry.yarnpkg.com/trim-right/-/trim-right-1.0.1.tgz#cb2e1203067e0c8de1f614094b9fe45704ea6003"
   integrity sha1-yy4SAwZ+DI3h9hQJS5/kVwTqYAM=
 
-"true-case-path@^1.0.3":
-  version "1.0.3"
-  resolved "https://registry.yarnpkg.com/true-case-path/-/true-case-path-1.0.3.tgz#f813b5a8c86b40da59606722b144e3225799f47d"
-  integrity sha512-m6s2OdQe5wgpFMC+pAJ+q9djG82O2jcHPOI6RNg1yy9rCYR+WD6Nbpl32fDpfC56nirdRy+opFa/Vk7HYhqaew==
-  dependencies:
-    glob "^7.1.2"
+"true-case-path@^2.0.0":
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/true-case-path/-/true-case-path-2.0.0.tgz#800377224013d34b331e3ef47d9da7d4ca4e3e9b"
+  integrity sha512-prSHPr2t+Df1c8E/7Mt2Y7VuEigQR0WaaXO55bO8QtF1xqewUh9WxIVjdMuKDqATw7XUO1tBqizIwV+G+ibFxA==
 
 tryer@^1.0.0:
   version "1.0.1"
