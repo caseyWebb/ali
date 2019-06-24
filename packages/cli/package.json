@@ -46,7 +46,7 @@
     "@types/cli-cursor": "^2.1.0",
     "@types/cli-truncate": "^1.1.0",
     "@types/elegant-spinner": "^1.0.0",
-    "@types/figures": "^2.0.0",
+    "@types/figures": "^3.0.1",
     "@types/fork-ts-checker-webpack-plugin": "^0.4.5",
     "@types/indent-string": "^3.2.0",
     "@types/keypress": "^2.0.30",
