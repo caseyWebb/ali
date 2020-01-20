@@ -13,7 +13,7 @@
     "bluebird": "^3.5.3",
     "cache-loader": "^2.0.1",
     "cli-cursor": "^2.1.0",
-    "cli-truncate": "^1.1.0",
+    "cli-truncate": "^2.1.0",
     "css-loader": "^2.1.1",
     "elegant-spinner": "^1.0.1",
     "eol": "^0.9.1",
