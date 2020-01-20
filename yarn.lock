@@ -1538,10 +1538,12 @@
     "@types/keygrip" "*"
     "@types/node" "*"
 
-"@types/elegant-spinner@^1.0.0":
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/@types/elegant-spinner/-/elegant-spinner-1.0.0.tgz#e963397f174929b9194d1ae193a548c7108c5afb"
-  integrity sha512-Wum9T/9yBJu8pKfSRfKe4LiCWyCAMFo7qL6Q7L2IKWLPtTI/nW9KDAi4QU916C60h2TnvovuEq3vk14djRFbtQ==
+"@types/elegant-spinner@^2.0.1":
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/@types/elegant-spinner/-/elegant-spinner-2.0.1.tgz#bcc5a34713d63ad2d0e35756489c8c6f508a3d75"
+  integrity sha512-luGpjTIhGZIhXh+jtpHOIFNW1f7J0euFfxgvFU+eL/UJ5Tr/R1SmxA5Jro2EOIW2PhlYmcqN3PemN+KEIP8yeA==
+  dependencies:
+    elegant-spinner "*"
 
 "@types/events@*":
   version "1.2.0"
@@ -4738,6 +4740,11 @@ ejs@^2.6.1:
   version "2.6.1"
   resolved "https://registry.yarnpkg.com/ejs/-/ejs-2.6.1.tgz#498ec0d495655abc6f23cd61868d926464071aa0"
   integrity sha512-0xy4A/twfrRCnkhfk8ErDi5DqdAsAqeGxht4xkCUrsvhhbQNs7E+4jV0CN7+NKIY0aHE72+XvqtBIXzD31ZbXQ==
+
+elegant-spinner@*:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/elegant-spinner/-/elegant-spinner-2.0.0.tgz#f236378985ecd16da75488d166be4b688fd5af94"
+  integrity sha512-5YRYHhvhYzV/FC4AiMdeSIg3jAYGq9xFvbhZMpPlJoBsfYgrw2DSCYeXfat6tYBu45PWiyRr3+flaCPPmviPaA==
 
 elegant-spinner@^1.0.1:
   version "1.0.1"
