@@ -11,7 +11,7 @@
     "@ali/build": "^0.0.0",
     "@yarnpkg/lockfile": "^1.1.0",
     "bluebird": "^3.5.3",
-    "cache-loader": "^2.0.1",
+    "cache-loader": "^4.1.0",
     "cli-cursor": "^2.1.0",
     "cli-truncate": "^1.1.0",
     "css-loader": "^2.1.1",
